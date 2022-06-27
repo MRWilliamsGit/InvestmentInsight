@@ -2,7 +2,9 @@ black
 matplotlib
 numpy
 pandas
+pylint
 pytest
 pytest-cov
-pylint
+torch
 requests
+transformers
