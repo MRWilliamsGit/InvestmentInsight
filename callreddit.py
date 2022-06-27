@@ -1,9 +1,7 @@
 import requests
 import pandas as pd
 
-# Reddit API from scratch
 def access_API():
-
     # Public Key
     CLIENT_ID = 'wHoj946HPNygT64EIPRTug'
     # Secret Key 
@@ -32,13 +30,9 @@ def access_API():
     headers['Authorization'] = f'bearer {TOKEN}'
     return headers
 
+#### 2. Get hot & new posts in r/wallstreetbets and r/superstonk and put into dataframe (can add additional subreddits)
 def API_request(headers):
-    ############################### Different Request Examples ####################################################
-
-    #### 1. Standard requests code for future use returned in json format (commenting out)
-        # requests.get('https://oauth.reddit.com/api/v1/me', headers = headers).json())
-
-    #### 2. Get hot & new posts in r/wallstreetbets and r/superstonk and put into dataframe (can add additional subreddits)
+   
     # Initialize lists of subreddits
     subreddit_list = ['wallstreetbets', 'superstonk']
 
@@ -78,13 +72,15 @@ def API_request(headers):
 def callreddit():
     headers = access_API()
     df = API_request(headers)
-    print(df)
-
-
-
-callreddit()
+    return df
 
 ###Appears to be extra at this time
+
+    ############################### Different Request Examples ####################################################
+
+    #### 1. Standard requests code for future use returned in json format (commenting out)
+        # requests.get('https://oauth.reddit.com/api/v1/me', headers = headers).json())
+
     #### 3. Get comments associated with posts
 
     # Intialize comments df
