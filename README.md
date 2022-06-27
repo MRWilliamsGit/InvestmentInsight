@@ -16,7 +16,7 @@ nce then, Reddit and subreddits like r/wallstreetbets has been used as reference
 
 GameStop Short Squeeze:
 <br>
-Si<img width="401" alt="Screen Shot 2022-06-27 at 2 48 48 PM" src="https://user-images.githubusercontent.com/78511177/176013914-8cca57f4-aad4-44a2-baed-ac7e06de1aa4.png">
+<img width="401" alt="Screen Shot 2022-06-27 at 2 48 48 PM" src="https://user-images.githubusercontent.com/78511177/176013914-8cca57f4-aad4-44a2-baed-ac7e06de1aa4.png">
 <br>
 Source: Wikipedia
 
