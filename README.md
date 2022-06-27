@@ -1,5 +1,6 @@
 # SocialMediaNLP
-![image](https://user-images.githubusercontent.com/78511177/176002907-9d497218-a596-4629-8540-6db5d036a796.png)
+ ![image](https://user-images.githubusercontent.com/78511177/176003824-5612f428-462f-4150-902e-cac420ab31c5.png)
+
 
 AIPI 540 Deep Learning Applications
 <br> Natural Language Processing Module
