@@ -13,6 +13,7 @@ Main St. vs. Wall St. - Pushing Back Against the Establishment
 
 Problem Statement
 -----------------
+* The objective of the project is to
 
 Getting Started
 ---------------
