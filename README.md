@@ -9,7 +9,8 @@ AIPI 540 Deep Learning Applications
 
 Motivation
 ----------
-Main St. vs. Wall St. - Pushbback against the Establishment 
+Main St. vs. Wall St. - Pushback against the Establishment 
+
 Problem Statement
 -----------------
 
