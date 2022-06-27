@@ -49,8 +49,9 @@ def API_request(headers):
             res = requests.get('https://oauth.reddit.com/r/{0}/{1}'.format(subreddit,category), headers = headers, params={'limit':'3'})
 
             # Access each post in the response and put in dataframe
+
             for post in res.json()['data']['children']:
-                posts_df = posts_df.append({
+                posts_df = pd.concat([posts_df, pd.DataFrame({
                     'subreddit': post['data']['subreddit'],
                     'source_category': category,
                     'full_name': post['kind'] + '_' + post['data']['id'],
@@ -61,7 +62,7 @@ def API_request(headers):
                     'ups': post['data']['ups'],
                     'downs': post['data']['downs'],
                     'score': post['data']['score'],
-                }, ignore_index=True)
+                }, index=[len(posts_df)+1])])
 
     # Remove duplicate posts (if any) based on full_name (unique ID of post)
     posts_df = posts_df[~posts_df.full_name.duplicated()]
