@@ -22,7 +22,7 @@ Source: Wikipedia
 
 Problem Statement
 -----------------
-* The objective of the project is to convert informal text from subreddits like r/wallstreetbets to more formal bite-sized bits from which users can make actionable trades. 
+* The objective of the project is to convert informal text from subreddits like r/wallstreetbets to more formal bite-sized bits from which every-day retail investors can make informed, actionable trades. 
 
 Getting Started
 ---------------
