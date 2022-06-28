@@ -26,7 +26,7 @@ Problem Statement
 Getting Started
 ---------------
 
-Project Structure
+Project Structure: NLP Pipeline
 -----------------
 
 Data Sourcing & Processing
