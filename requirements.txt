@@ -1,6 +1,7 @@
 black
 matplotlib
 numpy
+wheel
 pandas
 pylint
 pytest
