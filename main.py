@@ -1,11 +1,13 @@
 #main file
 
 from scripts.API_tools import access_API, API_request
+from scripts.getsummary import getmodel, summarize
 
-def callreddit():
+if __name__ == "__main__":
     
-    if headers == None:
-        headers = access_API()
+    headers = access_API()
+    df, block = API_request(headers, "NVDA")
+    model, t = getmodel()
+    output = summarize(model, t, block)
 
-    df = API_request(headers, "scrapbooking")
-    print(df)
+    print(output)

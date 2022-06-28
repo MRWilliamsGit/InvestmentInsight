@@ -1,6 +1,3 @@
-#Maria Williams
-#6/28/22
-
 import requests
 import pandas as pd
 
@@ -41,14 +38,16 @@ def API_request(headers, searchterm):
     posts_df = pd.DataFrame()
 
     # Get request: defaults to 100 returns, can restrict datetime 
-    res = requests.get('https://oauth.reddit.com/r/search?q='+searchterm, headers = headers)
-    #res = requests.get('https://oauth.reddit.com/r/{0}/{1}'.format(subreddit,category), headers = headers, params={'limit':'3'})
+    payload = {'q': searchterm}
+    res = requests.get('https://oauth.reddit.com/search', headers=headers, params=payload)
+ 
+    #print(res.json())
 
     # Access each post in the response and put in dataframe
     for post in res.json()['data']['children']:
         posts_df = pd.concat([posts_df, pd.DataFrame({
             'subreddit': post['data']['subreddit'],
-            'source_category': category,
+            'source_category': searchterm,
             'full_name': post['kind'] + '_' + post['data']['id'],
             'title': post['data']['title'],
             'content': post['data']['selftext'],
@@ -59,8 +58,15 @@ def API_request(headers, searchterm):
             'score': post['data']['score'],
         }, index=[len(posts_df)+1])])
 
-    # Remove duplicate posts (if any) based on full_name (unique ID of post)
-    posts_df = posts_df[~posts_df.full_name.duplicated()]
+    #extract title and post body
+    #(could eventually add more weight to titles?)
+    titles = posts_df['title']
+    body = posts_df['content']
+
+    #combine in one text block
+    textblock = ''
+    for this in body:
+        textblock = textblock+this
 
     #print(posts_df)
-    return posts_df
+    return posts_df, textblock

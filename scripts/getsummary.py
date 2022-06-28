@@ -1,33 +1,5 @@
-#from bs4 import BeautifulSoup
-#from sentence_transformers import SentenceTransformer, util
-#import numpy as np
-#import requests
-#from transformers import pipeline
-#import nltk
-#from nltk.corpus import stopwords
-
 import pandas as pd
 from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
-from callreddit import callreddit
-
-#pre-process text
-def gettext():
-    #get text
-    df = callreddit()
-
-    #extract title and post body
-    #(could eventually add more weight to titles?)
-    titles = df['title']
-    body = df['content']
-
-    #combine in one text block
-    #print(df.iloc[2])
-    text = ''
-    for this in body:
-        text = text+this
-
-    #print(text)
-    return text
 
 #get model and tokenizer once
 def getmodel():
@@ -37,9 +9,7 @@ def getmodel():
     print("Download Complete")
     return model, tokenizer
 
-def summarize():
-    text = gettext()
-    model, tokenizer = getmodel()
+def summarize(model, tokenizer, text):
 
     input_ids = tokenizer.encode(text, return_tensors="pt", truncation=True, max_length=1024)
     output = model.generate(
@@ -51,7 +21,5 @@ def summarize():
     
     output = tokenizer.decode(output[0])
 
-    print(output)
+    #print(output)
     return output
-
-summarize()
