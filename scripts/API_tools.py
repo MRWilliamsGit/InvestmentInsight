@@ -1,10 +1,10 @@
 import requests
 import pandas as pd
 
+#returns access key header
 def access_API():
-    # Public Key
+
     CLIENT_ID = 'wHoj946HPNygT64EIPRTug'
-    # Secret Key 
     SECRET_KEY = '8W37ufOt9rFx_KTjtJkpnudr8Pbgrg'
     #Set up authorization
     auth = requests.auth.HTTPBasicAuth(CLIENT_ID, SECRET_KEY)
@@ -37,6 +37,9 @@ def API_request(headers, searchterm):
     # Initialize dataframe for posts
     posts_df = pd.DataFrame()
 
+    #print progress
+    print("Collecting Data...")
+
     # Get request: defaults to 100 returns, can restrict datetime 
     payload = {'q': searchterm}
     res = requests.get('https://oauth.reddit.com/search', headers=headers, params=payload)
@@ -58,15 +61,4 @@ def API_request(headers, searchterm):
             'score': post['data']['score'],
         }, index=[len(posts_df)+1])])
 
-    #extract title and post body
-    #(could eventually add more weight to titles?)
-    titles = posts_df['title']
-    body = posts_df['content']
-
-    #combine in one text block
-    textblock = ''
-    for this in body:
-        textblock = textblock+this
-
-    #print(posts_df)
-    return posts_df, textblock
+    return posts_df

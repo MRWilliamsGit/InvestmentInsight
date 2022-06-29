@@ -1,7 +1,7 @@
 import pandas as pd
 from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
 
-#get model and tokenizer once
+# params: none, returns: model and tokenizer
 def getmodel():
     print("Downloading Model...")
     model = AutoModelForSeq2SeqLM.from_pretrained("sshleifer/distilbart-cnn-12-6")
@@ -9,8 +9,11 @@ def getmodel():
     print("Download Complete")
     return model, tokenizer
 
+# params: model, tokenizer, and text to summarize
+# returns: text summary 
 def summarize(model, tokenizer, text):
 
+    print("Generating Summary...")
     input_ids = tokenizer.encode(text, return_tensors="pt", truncation=True, max_length=1024)
     output = model.generate(
         input_ids,

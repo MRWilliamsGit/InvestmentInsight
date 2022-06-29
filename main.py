@@ -1,15 +1,19 @@
-#main file
-
 from scripts.API_tools import access_API, API_request
-from scripts.getsummary import getmodel, summarize
+from scripts.summary_tools import getmodel, summarize
+from scripts.data_tools import makecloud, prep_data
 
-if __name__ == "__main__":
-
-    searchterm = "NVDA"
+def main():
+    searchterm = "Puppies"
     
     headers = access_API()
-    df, block = API_request(headers, searchterm)
+    df = API_request(headers, searchterm)
+    block = makecloud(df)
+    #prep_data(block)
+
     model, t = getmodel()
     output = summarize(model, t, block)
-
     print(output)
+
+
+if __name__ == "__main__":
+    main()
