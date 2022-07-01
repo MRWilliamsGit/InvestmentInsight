@@ -1,17 +1,24 @@
 from scripts.API_tools import access_API, API_request
-from scripts.summary_tools import getmodel, summarize
-from scripts.data_tools import makecloud, prep_data
+from scripts.data_tools import makecloud
+from scripts.summary_classes import ExFinSummarizer, GenFinSummarizer
+
 
 def main():
-    searchterm = "Puppies"
-    
+
+    searchterm = "AAPL"
+
     headers = access_API()
     df = API_request(headers, searchterm)
     block = makecloud(df)
-    #prep_data(block)
 
-    model, t = getmodel()
-    output = summarize(model, t, block)
+    # generative summarization
+    # gfs = GenFinSummarizer()
+    # output = gfs.summarize(block)
+
+    # extractive summarization
+    efs = ExFinSummarizer()
+    output = efs.summarize(block, top_n=5)
+
     print(output)
 
 

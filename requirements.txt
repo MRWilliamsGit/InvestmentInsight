@@ -1,5 +1,7 @@
 black
 matplotlib
+networkx
+nltk
 numpy
 wheel
 pandas
@@ -9,4 +11,5 @@ pytest-cov
 torch
 requests
 spacy
+sklearn
 transformers

@@ -19,7 +19,7 @@ def makecloud(posts_df):
     #return block
     return textblock
 
-def prep_data(textblock):
+def token_word(textblock):
     # remove links
     textblock = re.sub('http[s]?://\S+', '', textblock)
 
