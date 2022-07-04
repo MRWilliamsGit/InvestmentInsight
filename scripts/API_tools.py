@@ -1,19 +1,21 @@
 import requests
 import pandas as pd
+import json
+import streamlit as st
 
 #returns access key header
 def access_API():
 
-    CLIENT_ID = 'wHoj946HPNygT64EIPRTug'
-    SECRET_KEY = '8W37ufOt9rFx_KTjtJkpnudr8Pbgrg'
+    CLIENT_ID = st.secrets['CLIENT_ID']
+    SECRET_KEY = st.secrets['SECRET_KEY']
     #Set up authorization
     auth = requests.auth.HTTPBasicAuth(CLIENT_ID, SECRET_KEY)
 
     # Create dictionary to pass to reddit for login
     data = {
-        'grant_type': 'password',
-        'username': 'AIPI540NLP',
-        'password': 'n$iQf782W*06'
+        "grant_type": "password",
+        "username": st.secrets['username'],
+        "password": st.secrets['password']
     }
 
     # Create description of API (Used MyAPI with a version number)
