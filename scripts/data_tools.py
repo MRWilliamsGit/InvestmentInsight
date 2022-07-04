@@ -13,12 +13,13 @@ def makecloud(posts_df):
 
     #combine in one text block
     textblock = ''
-    for i in range(len(titles)):
-        textblock = textblock+titles[i]
-        textblock = textblock+body[i]
+    for this in body:
+        textblock = textblock+this
 
     # remove links
-    textblock = re.sub('http[s]?://\S+', '', textblock)
+    textblock = re.sub(r'http\S+', '', textblock)
+
+    #textblock = re.sub('http[s]?://\S+', '', textblock)
     
     #return block
     return textblock
