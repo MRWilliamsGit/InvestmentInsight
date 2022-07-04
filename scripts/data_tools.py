@@ -13,16 +13,31 @@ def makecloud(posts_df):
 
     #combine in one text block
     textblock = ''
-    for this in body:
+    for i in range(len(titles)):
+        textblock = textblock+titles[i]
+        textblock = textblock+body[i]
+
+    # remove links
+    textblock = re.sub('http[s]?://\S+', '', textblock)
+    
+    #return block
+    return textblock
+
+def maketitlecloud(posts_df):
+    #extract title and post body
+    #(could eventually add more weight to titles?)
+    titles = posts_df['title']
+    body = posts_df['content']
+
+    #combine titles in one text block
+    textblock = ''
+    for this in titles:
         textblock = textblock+this
     
     #return block
     return textblock
 
 def token_word(textblock):
-    # remove links
-    textblock = re.sub('http[s]?://\S+', '', textblock)
-
     # feed text into spacy
     #download('en_core_web_sm')
     nlp = spacy.load("en_core_web_sm")
