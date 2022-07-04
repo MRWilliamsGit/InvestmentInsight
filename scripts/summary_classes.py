@@ -23,6 +23,7 @@ class GenFinSummarizer():
     def summarize(self, text):
         
         print("Generating Summary...")
+        #this truncates the block... don't want that
         input_ids = self.tokenizer.encode(text, return_tensors="pt", truncation=True, max_length=1024)
         output = self.model.generate(
             input_ids,

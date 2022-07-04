@@ -1,6 +1,7 @@
 from scripts.API_tools import access_API, API_request
-from scripts.data_tools import makecloud
+from scripts.data_tools import makecloud, maketitlecloud
 from scripts.summary_classes import ExFinSummarizer, GenFinSummarizer
+import pandas as pd
 
 
 def main():
@@ -10,14 +11,17 @@ def main():
     headers = access_API()
     df = API_request(headers, searchterm)
     block = makecloud(df)
+    #block = maketitlecloud(df)
 
     # generative summarization
-    # gfs = GenFinSummarizer()
-    # output = gfs.summarize(block)
+    #returns 200 word summary
+    #gfs = GenFinSummarizer()
+    #output = gfs.summarize(block)
 
     # extractive summarization
+    #top_n = the number of sentences to extract
     efs = ExFinSummarizer()
-    output = efs.summarize(block, top_n=5)
+    output = efs.summarize(block, top_n=10)
 
     print(output)
 
