@@ -18,8 +18,6 @@ def makecloud(posts_df):
 
     # remove links
     textblock = re.sub(r'http\S+', '', textblock)
-
-    #textblock = re.sub('http[s]?://\S+', '', textblock)
     
     #return block
     return textblock
