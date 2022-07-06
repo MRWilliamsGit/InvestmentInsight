@@ -8,7 +8,6 @@ def access_API():
 
     CLIENT_ID = st.secrets['CLIENT_ID']
     SECRET_KEY = st.secrets['SECRET_KEY']
-    #Set up authorization
     auth = requests.auth.HTTPBasicAuth(CLIENT_ID, SECRET_KEY)
 
     # Create dictionary to pass to reddit for login
@@ -32,9 +31,11 @@ def access_API():
     headers['Authorization'] = f'bearer {TOKEN}'
     return headers
 
-# requires header returned from access_API function
 # search Reddit and collect posts with searchterm, return dataframe
-def API_request(headers, searchterm):
+def API_request(searchterm):
+
+    #get access header
+    headers = access_API()
 
     # Initialize dataframe for posts
     posts_df = pd.DataFrame()
@@ -42,25 +43,24 @@ def API_request(headers, searchterm):
     #print progress
     print("Collecting Data...")
 
-    # Get request: defaults to 100 returns, can restrict datetime 
-    payload = {'q': searchterm}
+    # Get request: can't restrict to flair, unfortunately 
+    payload = {'q': searchterm, 'limit': 100}
     res = requests.get('https://oauth.reddit.com/search', headers=headers, params=payload)
  
-    #print(res.json())
-
-    # Access each post in the response and put in dataframe
+    # Access each post in the response and put the news entries in dataframe
     for post in res.json()['data']['children']:
-        posts_df = pd.concat([posts_df, pd.DataFrame({
-            'subreddit': post['data']['subreddit'],
-            'source_category': searchterm,
-            'full_name': post['kind'] + '_' + post['data']['id'],
-            'title': post['data']['title'],
-            'content': post['data']['selftext'],
-            'type': post['data']['link_flair_text'],
-            'upvote_ratio': post['data']['upvote_ratio'],
-            'ups': post['data']['ups'],
-            'downs': post['data']['downs'],
-            'score': post['data']['score'],
-        }, index=[len(posts_df)+1])])
+        if post['data']['link_flair_text'] == 'Company News':
+            posts_df = pd.concat([posts_df, pd.DataFrame({
+                'subreddit': post['data']['subreddit'],
+                'source_category': searchterm,
+                'full_name': post['kind'] + '_' + post['data']['id'],
+                'title': post['data']['title'],
+                'content': post['data']['selftext'],
+                'type': post['data']['link_flair_text'],
+                'upvote_ratio': post['data']['upvote_ratio'],
+                'ups': post['data']['ups'],
+                'downs': post['data']['downs'],
+                'score': post['data']['score'],
+            }, index=[len(posts_df)+1])])
 
     return posts_df

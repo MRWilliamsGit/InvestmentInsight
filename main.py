@@ -8,8 +8,7 @@ def main():
 
     searchterm = "AAPL"
 
-    headers = access_API()
-    df = API_request(headers, searchterm)
+    df = API_request(searchterm)
     block = makecloud(df)
     #block = maketitlecloud(df)
 
@@ -21,7 +20,7 @@ def main():
     # extractive summarization
     #top_n = the number of sentences to extract
     #efs = ExFinSummarizer()
-    #output = efs.summarize(block, top_n=10)
+    #output = efs.summarize(block, top_n=5)
 
     print(output)
 
