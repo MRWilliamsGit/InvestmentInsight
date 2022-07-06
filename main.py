@@ -15,15 +15,15 @@ def main():
 
     # generative summarization
     #returns 200 word summary
-    #gfs = GenFinSummarizer()
-    #output = gfs.summarize(block)
+    gfs = GenFinSummarizer()
+    output = gfs.summarize(block)
 
     # extractive summarization
     #top_n = the number of sentences to extract
     #efs = ExFinSummarizer()
     #output = efs.summarize(block, top_n=10)
 
-    #print(output)
+    print(output)
 
 
 if __name__ == "__main__":
