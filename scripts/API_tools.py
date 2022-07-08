@@ -49,7 +49,7 @@ def API_request(searchterm):
  
     # Access each post in the response and put the news entries in dataframe
     for post in res.json()['data']['children']:
-        if post['data']['link_flair_text'] == 'Company News':
+        if post['data']['link_flair_text'] == 'Company News' or post['data']['link_flair_text'] == 'News':
             posts_df = pd.concat([posts_df, pd.DataFrame({
                 'subreddit': post['data']['subreddit'],
                 'source_category': searchterm,
