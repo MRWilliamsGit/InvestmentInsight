@@ -1,6 +1,7 @@
-from scripts.API_tools import access_API, API_request
-from scripts.data_tools import makecloud, maketitlecloud, make_cloud_chunks
+from scripts.API_tools import API_request
+from scripts.data_tools import makecloud, make_cloud_chunks, make_sent_cloud
 from scripts.summary_classes import ExFinSummarizer, GenFinSummarizer
+#from scripts.sentiment_analysis import 
 import pandas as pd
 import streamlit as st
 

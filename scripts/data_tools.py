@@ -96,3 +96,21 @@ def token_word(textblock):
     tokens = [token for token in tokens if token.lower() not in stopwords and token not in punctuations]
 
     print(tokens)
+
+# params: df of post info returned from API
+# returns: text block of body text
+def make_sent_cloud(posts_df):
+    #add titles and post bodies together
+    textblock = ''
+    for i in range(len(posts_df)):
+        textblock = textblock + " " + posts_df['title'][i+1] + ' ' + posts_df['content'][i+1]
+
+    #remove links, etc.
+    textblock = re.sub(r'http\S+', '', textblock)
+    textblock = re.sub("&amp;#x200B;", '', textblock)
+    gone = '[]()'
+    for g in gone:
+        textblock = textblock.replace(g, '')
+    textblock = textblock.replace("\n", ' ')
+    
+    return textblock
