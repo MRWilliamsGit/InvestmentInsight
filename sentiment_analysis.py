@@ -7,23 +7,39 @@ import pandas as pd
 import pickle
 import pprint
 import reddit_helper
+import os
+import re
 
 from tqdm import tqdm
+from nltk.stem import WordNetLemmatizer
+from nltk.corpus import wordnet
+from nltk.corpus import stopwords
+
 
 #NLP Corpora:
-# stopwords corpus for removing stopwords & wordnet for lemmatizing
-nltk.download('stopwords')
-nltk.download('wordnet')
+#stopwords corpus for removing stopwords & wordnet for lemmatizing
+def nlp_corpus():
+    nltk.download('stopwords')
+    nltk.download('wordnet')
 
-#Get Summary
+    return
 
-#Preprocess the Data
+#Preprocess Summary 
+def get_summary(textblock):
+    textblock = textblock.lower
+    textblock = textblock.lower
 
-#1. Clean up
+    return textblock
 
-#2. Lemmatize
+#Lemmatize Summary
+def lemmatize_words_words(words):
+    lemmatized_words = [WordNetLemmatizer().lemmatize(word, 'v') for word in words]
 
-#3. Remove Stopwords
+    return lemmatized_words
+
+
+#Remove Stopwords
+
 
 
 #Loughran McDonald Sentiment Word Lists to do sentiment analysis on Reddit posts
