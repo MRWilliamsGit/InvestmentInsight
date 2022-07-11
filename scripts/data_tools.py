@@ -181,7 +181,6 @@ def mcdonald():
 #Bag of Words
 #Generate sentiment bag of words from Reddit threads
 
-
 #Generate a bag of words that counts the number of sentiment words in each Reddit post
 def get_bag_of_words(sentiment_words, posts):
     vec = CountVectorizer(vocabulary=sentiment_words)
@@ -193,21 +192,6 @@ def get_bag_of_words(sentiment_words, posts):
         bag_of_words[i] = vectors[i].toarray()[0]
 
     return bag_of_words.astype(int)
-
-
-#Jaccard Similarity
-#From Bag of Words calculate jaccard similarity 
-def get_jaccard_similarity(bag_of_words_matrix):
-    jaccard_similarities = []
-    bag_of_words_matrix = np.array(bag_of_words_matrix, dtype=bool)
-    
-    for i in range(len(bag_of_words_matrix)-1):
-            u = bag_of_words_matrix[i]
-            v = bag_of_words_matrix[i+1]
-            jaccard_similarities.append(jaccard_similarity_score(u,v))    
-    
-    return jaccard_similarities
-
 
 #TF-IDF 
 # Using the sentiment word lists to generate sentiment TF-IDF from Reddit posts
@@ -224,6 +208,21 @@ def streamlit_classification(posts):
     elif st.button('negative'):
         st.write('Sell the stock')
     st.write('Do nothing. Wait for the right catch.')
+
+
+#Jaccard Similarity
+#From Bag of Words calculate jaccard similarity 
+def get_jaccard_similarity(bag_of_words_matrix):
+    jaccard_similarities = []
+    bag_of_words_matrix = np.array(bag_of_words_matrix, dtype=bool)
+    
+    for i in range(len(bag_of_words_matrix)-1):
+            u = bag_of_words_matrix[i]
+            v = bag_of_words_matrix[i+1]
+            jaccard_similarities.append(jaccard_similarity_score(u,v))    
+    
+    return jaccard_similarities
+
 
 
 #Cosine Similarity
