@@ -3,6 +3,28 @@ import spacy
 import re
 from spacy.lang.en.stop_words import STOP_WORDS
 from spacy.cli.download import download
+import sys
+!{sys.executable} -m pip install -r requirements.txt
+
+import nltk
+import numpy as np
+import pandas as pd
+import pickle
+import pprint
+import reddit_helper
+import os
+import re
+
+from tqdm import tqdm
+from nltk.stem import WordNetLemmatizer
+from nltk.corpus import wordnet
+from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize
+from collections import defaultdict, Counter
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.metrics import jaccard_similarity_score
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
 
 # params: df of post info returned from API
 # returns: text block of body text
@@ -114,3 +136,102 @@ def make_sent_cloud(posts_df):
     textblock = textblock.replace("\n", ' ')
     
     return textblock
+
+
+#Sentiment Analysis
+
+#NLP Corpora:
+#stopwords corpus for removing stopwords & wordnet for lemmatizing
+def nlp_corpus():
+    nltk.download('stopwords')
+    nltk.download('wordnet')
+
+    return
+
+#Preprocess Summary 
+def get_summary(textblock):
+    textblock = textblock.lower
+    textblock = textblock.lower
+
+    return textblock
+
+#Lemmatize Summary
+def lemmatize_words_words(words):
+    lemmatized_words = [WordNetLemmatizer().lemmatize(word, 'v') for word in words]
+
+    return lemmatized_words
+
+
+#Remove Stopwords
+def remove_stopwords(summary):
+    all_stopwords = stopwords.words('english')
+
+    text_tokens = word_tokenize(summary)
+    tokens_without_sw = [word for word in text_tokens if not word in all_stopwords]
+    return tokens_without_sw
+
+
+#Loughran McDonald Sentiment Word Lists to do sentiment analysis on Reddit posts
+#Of the 7 available sentiments, only 3 are used: negative, postive, and uncertainty
+def mcdonald():
+    sentiment_words = ['negative', 'positive', 'uncertainty']
+
+    return sentiment_words
+
+#Bag of Words
+#Generate sentiment bag of words from Reddit threads
+
+
+#Generate a bag of words that counts the number of sentiment words in each Reddit post
+def get_bag_of_words(sentiment_words, posts):
+    vec = CountVectorizer(vocabulary=sentiment_words)
+    vectors = vec.fit_transform(posts)
+    words_list = vec.get_feature_names()
+    bag_of_words = np.zeros([len(posts), len(words_list)])
+    
+    for i in range(len(posts)):
+        bag_of_words[i] = vectors[i].toarray()[0]
+
+    return bag_of_words.astype(int)
+
+
+#Jaccard Similarity
+#From Bag of Words calculate jaccard similarity 
+def get_jaccard_similarity(bag_of_words_matrix):
+    jaccard_similarities = []
+    bag_of_words_matrix = np.array(bag_of_words_matrix, dtype=bool)
+    
+    for i in range(len(bag_of_words_matrix)-1):
+            u = bag_of_words_matrix[i]
+            v = bag_of_words_matrix[i+1]
+            jaccard_similarities.append(jaccard_similarity_score(u,v))    
+    
+    return jaccard_similarities
+
+
+#TF-IDF 
+# Using the sentiment word lists to generate sentiment TF-IDF from Reddit posts
+def get_tfidf(sentiment_words, posts):
+    vec = TfidfVectorizer(vocabulary=sentiment_words)
+    tfidf = vec.fit_transform(docs)
+    
+    return tfidf.toarray()
+
+#Streamlit Classification
+def streamlit_classification(posts):
+    if st.button('positive'):
+        st.write('Buy the stock')
+    elif st.button('negative'):
+        st.write('Sell the stock')
+    st.write('Do nothing. Wait for the right catch.')
+
+
+#Cosine Similarity
+#Use TF-IDF values to calculate the cosine similarity 
+def get_cosine_similarity(tfidf_matrix):
+    cosine_similarities = []    
+    
+    for i in range(len(tfidf_matrix)-1):
+        cosine_similarities.append(cosine_similarity(tfidf_matrix[i].reshape(1, -1),tfidf_matrix[i+1].reshape(1, -1))[0,0])
+    
+    return cosine_similarities
