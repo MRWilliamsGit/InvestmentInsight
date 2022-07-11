@@ -1,4 +1,3 @@
-import pandas as pd
 from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
 
 import nltk
