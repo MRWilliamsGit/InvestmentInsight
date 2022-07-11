@@ -1,6 +1,6 @@
 import sys
-!{sys.executable} -m pip install -r requirements.txt
-
+#!{sys.executable} -m pip install -r requirements.txt
+from scripts.data_tools import make_sent_cloud
 import nltk
 import numpy as np
 import pandas as pd
