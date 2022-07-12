@@ -22,7 +22,6 @@ Main St. vs. Wall St. - Pushing Back Against the Establishment
 * Unconventional data can provide insights that other market participants haven't considered
 * Investors who use the same resources can only achieve the ordinary. Only the non-concensus investor can yield the *extraordinary* 
 <br>
-<br>
 <img width="602" alt="Gamestop " src="https://user-images.githubusercontent.com/78511177/178586080-3208a474-91a1-4cd6-8b06-0865e3b5de75.png">
 (Source: Marketwatch)
 
