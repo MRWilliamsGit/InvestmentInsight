@@ -30,8 +30,7 @@ Main St. vs. Wall St. - Pushing Back Against the Establishment
 <br>
 GameStop Short Squeeze: A phenomenon in finance when there is a lack of supply and an excess of demand for the stock due to short sellers having to buy stocks to cover their short positions, thus causing a sharp increase in share price
 <br>
-![A test image](https://fsc.stevens.edu/gamestop/)
-
+![image](https://www.google.com/https://fsc.stevens.edu/content/images/2021/03/im-290050.jpg)
 
 
 Problem Statement
