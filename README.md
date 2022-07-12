@@ -12,18 +12,21 @@ Motivation
 ----------
 "The non-consensus idea is the only way to achieve extraordinary results in *anything*." - Doug Clinton
 
-<br> 
 <br>
 Main St. vs. Wall St. - Pushing Back Against the Establishment 
+<br>
+<br>
 
 
 <br>
 <br> In January 2021, GameStop, an American video game retailer, experienced a short squeeze initiated by Reddit's subreddit r/wallstreetbets. Reddit is a social news website that started the retail vs. establishment movement in investments. Since then, Reddit and subreddits like r/wallstreetbets has transformed into a platform for sharing investment recommendations and discussion. 
 <br>
-![](../../../Desktop/Gamestop%20.png)
+<br>
+
 ![](Gamestop.png)
 <br>
-* As more players participate in markets, alternative data sources are being utilized to generate alpha or above market returns
+<br>
+* As the number of market participants increase so will the demand for alternative data sources to generate alpha (above market returns)
 <br>
 * Unconventional data can provide insights that other market participants haven't considered
 <br>
