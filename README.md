@@ -1,4 +1,4 @@
-# Making Cents Out of Nonsense: 
+# Making Cents Out of Nonsense -
 # Applying NLP to Reddit for an Investment Edge
  ![image](https://user-images.githubusercontent.com/78511177/176003905-7eed8447-4bd7-43d5-98d0-ed475fe48a73.png)
 
@@ -31,8 +31,8 @@ Main St. vs. Wall St. - Pushing Back Against the Establishment
 <br>
 GameStop Short Squeeze: A phenomenon in finance when there is a lack of supply and an excess of demand for the stock due to short sellers having to buy stocks to cover their short positions, thus causing a sharp increase in share price
 <br>
-![image](https://www.google.com/https://fsc.stevens.edu/content/images/2021/03/im-290050.jpg)
 
+![image](https://www.google.com/imgres?imgurl%3Dhttps%3A%2F%2Fimages.mktw.net%2Fim-290050%3Fwidth%3D700%26height%3D395%26imgrefurl%3Dhttps%3A%2F%2Fwww.marketwatch.com%2Fstory%2Fgamestop-stock-more-than-doubles-to-record-high-then-loses-it-all-in-another-volatile-day-of-trading-11611600212%26tbnid%3DbUJzFqzPTnf97M%26vet%3D12ahUKEwjQvNGr0vP4AhVO2lMKHR5pB9gQMygGegUIARCqAQ..i%26docid%3DXQIkaaanM0jthM%26w%3D700%26h%3D395%26q%3Dgamestop%20stock%20rise%26ved%3D2ahUKEwjQvNGr0vP4AhVO2lMKHR5pB9gQMygGegUIARCqAQ)
 
 Problem Statement
 -----------------
