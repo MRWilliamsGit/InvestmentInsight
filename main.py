@@ -1,6 +1,6 @@
 from scripts.API_tools import API_request
-from scripts.data_tools import makecloud, make_cloud_chunks
-from scripts.summary_classes import ExFinSummarizer, GenFinSummarizer
+from scripts.data_tools import make_cloud_chunks
+from scripts.summary_classes import GenFinSummarizer
 from scripts.sentiment_analysis import Sentiment
 import streamlit as st
 
@@ -28,18 +28,10 @@ def main():
                 output = gfs.summarize(text_list, length=400)
             st.write(output)
 
-            # extractive summarization
-            # top_n = the number of sentences to extract
-            # block = makecloud(df)
-            # efs = ExFinSummarizer()
-            # output = efs.summarize(block, top_n=5)
-            # print(output)
-            # st.write(output)
-
             # sentiment analysis
-            #sent = Sentiment()
-            #sent.data_prep(df)
-
+            # sent = Sentiment()
+            # lemwords = sent.data_prep(df)
+            # sent.Derrick_get_sent(lemwords)
 
 if __name__ == "__main__":
     main()
