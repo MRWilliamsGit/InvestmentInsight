@@ -12,6 +12,7 @@ Motivation
 ----------
 "The non-consensus idea is the only way to achieve extraordinary results in *anything*." - Doug Clinton
 <br>
+<br>
 Main St. vs. Wall St. - Pushing Back Against the Establishment 
 <br>
 ![main](https://user-images.githubusercontent.com/78511177/178585851-20285751-0a5d-4ada-9ffb-9a4dddf7cbd8.png)
