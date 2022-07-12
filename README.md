@@ -13,13 +13,16 @@ Motivation
 <br> 
 <br>
 Main St. vs. Wall St. - Pushing Back Against the Establishment 
+image.png
 <br>
-<br> Hedge funds and other financial institutions are know for colluding and profiting off of insider trading and other shared secrets. In 2021, GameStop, an American video game retailer, experienced a short squeeze initiated by Reddit's subreddit r/wallstreetbets. Reddit is a social news website that started the retail vs. establishment movement in investments. Since then, Reddit and subreddits like r/wallstreetbets have been used as reference for investment recommendations and discussion. 
+<br> Hedge funds and other financial institutions are know for colluding and profiting off of insider trading and other shared secrets. In 2021, GameStop, an American video game retailer, experienced a short squeeze initiated by Reddit's subreddit r/wallstreetbets. Reddit is a social news website that started the retail vs. establishment movement in investments. Since then, Reddit and subreddits like r/wallstreetbets are core resoruces for discovering investment recommendations and discussion. 
 
 <br>
 * As more players participate in markets, alternative data sources, like social media & satellite imagery, are being utilized 
+<br>
 * Unconventional, unstructured data sources can provide insights that other market participants don't yet have or aren't considering
-* Investors who use the same resources can only achive the ordinary. Only the non-concensus investor who generates original ideas can yield the *extraordinary* In finance, returns generated above the market is called alpha. 
+<br>
+* Investors who use the same resources can only achive the ordinary. Only the non-concensus investor who generates original ideas can yield the *extraordinary*. In finance, returns generated above the market is called alpha. 
 
 GameStop Short Squeeze: A phenomenon in finance when there is a lack of supply and an excess of demand for the stock due to short sellers having to buy stocks to cover their short positions, thus causing a sharp increase in share price
 <br>
