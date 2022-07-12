@@ -6,7 +6,7 @@ AIPI 540 Deep Learning Applications
 <br> Natural Language Processing Module
 <br> Project by: Colin Bryan, Maria Williams, and Derrick Adam
 
-Streamlit Platform: https://mrwilliamsgit-socialmedianlp-main-yx3u2h.streamlitapp.com/
+[Streamlit Platform](https://mrwilliamsgit-socialmedianlp-main-yx3u2h.streamlitapp.com/)
 
 Motivation
 ----------
@@ -18,8 +18,10 @@ Main St. vs. Wall St. - Pushing Back Against the Establishment
 
 
 <br>
-<br> In 2021, GameStop, an American video game retailer, experienced a short squeeze initiated by Reddit's subreddit r/wallstreetbets. Reddit is a social news website that started the retail vs. establishment movement in investments. Since then, Reddit and subreddits like r/wallstreetbets has transformed into a platform for sharing investment recommendations and discussion. 
-
+<br> In January 2021, GameStop, an American video game retailer, experienced a short squeeze initiated by Reddit's subreddit r/wallstreetbets. Reddit is a social news website that started the retail vs. establishment movement in investments. Since then, Reddit and subreddits like r/wallstreetbets has transformed into a platform for sharing investment recommendations and discussion. 
+<br>
+![](../../../Desktop/Gamestop%20.png)
+![](Gamestop.png)
 <br>
 * As more players participate in markets, alternative data sources are being utilized to generate alpha or above market returns
 <br>
@@ -30,17 +32,20 @@ Main St. vs. Wall St. - Pushing Back Against the Establishment
 <br>
 GameStop Short Squeeze: A phenomenon in finance when there is a lack of supply and an excess of demand for the stock due to short sellers having to buy stocks to cover their short positions, thus causing a sharp increase in share price
 <br>
-![image](/Users/derrickadam/Downloads/gamestop.png)
+
 
 Problem Statement
 -----------------
 * The objective of the project is to convert informal text from subreddits like, r/wallstreetbets, into formalized, bite-sized bits from which everyday, retail investors can make informed, actionable trades. 
 <br>
 <br>
-* Generally, retail investors, don't have the time or financial acumen to parse through troves of information to make thoughtful investment decisions. The interactive Streamlit platform does all of this in the following way:
+* Generally, retail investors, don't have the time or financial acumen to parse through troves of information to make thoughtful investment decisions. The interactive Streamlit platform streamlines all of this in the following ways:
+
     1) Users input a stock ticker and the model will compile relevant news threads regarding that stock to curate a generative summary
-    2) Sentiment analysis will label the news aggregation as postive, negative, or neutral. 
-    3) Given that non-concensus investing yields superior returns, the platform will generate a buy reommendation when the sentiment is      negative, a sell signal when the sentiment is negative, and do nothing when the sentiment is uncertain. 
+
+    2) Sentiment analysis will label the news aggregation as postive, negative, or neutral
+
+    3) Given that non-concensus investing yields superior returns, the platform will generate a buy reommendation when the sentiment is negative, a sell signal when the sentiment is negative, and do nothing when the sentiment is uncertain
 
 Getting Started
 ---------------
