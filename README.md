@@ -5,6 +5,8 @@ AIPI 540 Deep Learning Applications
 <br> Natural Language Processing Module
 <br> Project by: Colin Bryan, Maria Williams, and Derrick Adam
 
+Streamlit link: https://mrwilliamsgit-socialmedianlp-main-yx3u2h.streamlitapp.com/
+
 Motivation
 ----------
 "Software is eating the world." - Marc Andreessen
