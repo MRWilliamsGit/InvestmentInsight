@@ -62,11 +62,16 @@ class Sentiment():
         all_stopwords = stopwords.words('english')
         lemmatized_words = [word for word in lemmatized_words if not word in all_stopwords]
 
+        return lemmatized_words
+
+    def Derrick_get_sent(self, lemmatized_words):
+
         sentiment_list = []
-        with open('LM-SA-2020.txt', 'r') as file:
+        with open('data\LM-SA-2020.txt', 'r') as file:
             for line in file:
-                clear_line = line.replace("\n", '').replace(",", '').replace("'", '').strip()
-                word, emotion = clear_line.split(':')
+                print(line)
+                #clear_line = line.replace("\n", '').replace(",", '').replace("'", '').strip()
+                word, emotion = line.split(' ')
 
                 if word in lemmatized_words:
                     sentiment_list.append(emotion)
