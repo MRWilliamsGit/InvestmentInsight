@@ -5,11 +5,12 @@ AIPI 540 Deep Learning Applications
 <br> Natural Language Processing Module
 <br> Project by: Colin Bryan, Maria Williams, and Derrick Adam
 
-Streamlit link: https://mrwilliamsgit-socialmedianlp-main-yx3u2h.streamlitapp.com/
+Streamlit Platform: https://mrwilliamsgit-socialmedianlp-main-yx3u2h.streamlitapp.com/
 
 Motivation
 ----------
 "The non-consensus idea is the only way to achieve extraordinary results in *anything*." - Doug Clinton
+"Be fearful when others are greedy. Be greedy when others are fearful." - Warren Buffett
 <br> 
 <br>
 Main St. vs. Wall St. - Pushing Back Against the Establishment 
@@ -35,7 +36,12 @@ GameStop Short Squeeze: A phenomenon in finance when there is a lack of supply a
 
 Problem Statement
 -----------------
-* The objective of the project is to convert informal text from, subreddits like r/wallstreetbets, into more formal bite-sized bits from which everyday, retail investors can make informed, actionable trades. 
+* The objective of the project is to convert informal text from subreddits like, r/wallstreetbets, into formalized, bite-sized bits from which everyday, retail investors can make informed, actionable trades. 
+<br>
+* Generally, retail investors, don't have the time or financial acumen to parse through troves of information to make thoughtful investment decisions. The interactive Streamlit platform does all of this in the following way:
+    1) Users input a stock ticker and the model will compile relevant news threads regarding that stock to curate a generative summary
+    2) Sentiment analysis will label the news aggregation as postive, negative, or neutral. 
+    3) Given that non-concensus investing yields superior returns, the platform will generate a buy reommendation when the sentiment is      negative, a sell signal when the sentiment is negative, and do nothing when the sentiment is uncertain. 
 
 Getting Started
 ---------------
