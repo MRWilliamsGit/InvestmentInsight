@@ -13,9 +13,10 @@ Motivation
 <br> 
 <br>
 Main St. vs. Wall St. - Pushing Back Against the Establishment 
-image.png
+![image](../../../Downloads/images.jpeg)
+
 <br>
-<br> Hedge funds and other financial institutions are know for colluding and profiting off of insider trading and other shared secrets. In 2021, GameStop, an American video game retailer, experienced a short squeeze initiated by Reddit's subreddit r/wallstreetbets. Reddit is a social news website that started the retail vs. establishment movement in investments. Since then, Reddit and subreddits like r/wallstreetbets are core resoruces for discovering investment recommendations and discussion. 
+<br> Hedge funds and other financial institutions are know for colluding and profiting off of insider trading and other shared secrets. In 2021, GameStop, an American video game retailer, experienced a short squeeze initiated by Reddit's subreddit r/wallstreetbets. Reddit is a social news website that started the retail vs. establishment movement in investments. Since then, Reddit and subreddits like r/wallstreetbets has transformed into a platform for sharing investment recommendations and discussion. 
 
 <br>
 * As more players participate in markets, alternative data sources, like social media & satellite imagery, are being utilized 
