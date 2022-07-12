@@ -13,7 +13,7 @@ Motivation
 <br> 
 <br>
 Main St. vs. Wall St. - Pushing Back Against the Establishment 
-[](https://www.google.com/imgres?imgurl%3Dhttps%3A%2F%2Fimage.cnbcfm.com%2Fapi%2Fv1%2Fimage%2F39797041-wall_st_main_st_200.jpg%3Fv%3D1354732729%26w%3D1920%26h%3D1080%26imgrefurl%3Dhttps%3A%2F%2Fwww.cnbc.com%2F2010%2F12%2F29%2Fwall-street-and-suicide.html%26tbnid%3DF8TEObuejLjl2M%26vet%3D12ahUKEwj88qDlw_P4AhV1FlkFHbRwBFIQMyg0egQIARBK..i%26docid%3DaO3yAzd0VRD5iM%26w%3D1920%26h%3D1080%26q%3Dmain%20street%20and%20wall%20street%26ved%3D2ahUKEwj88qDlw_P4AhV1FlkFHbRwBFIQMyg0egQIARBK)
+
 
 <br>
 <br> Hedge funds and other financial institutions are know for colluding and profiting off of insider trading and other shared secrets. In 2021, GameStop, an American video game retailer, experienced a short squeeze initiated by Reddit's subreddit r/wallstreetbets. Reddit is a social news website that started the retail vs. establishment movement in investments. Since then, Reddit and subreddits like r/wallstreetbets has transformed into a platform for sharing investment recommendations and discussion. 
@@ -23,7 +23,7 @@ Main St. vs. Wall St. - Pushing Back Against the Establishment
 <br>
 * Unconventional data can provide insights that other market participants haven't considered
 <br>
-* Investors who use the same resources can only achieve the ordinary. Only the non-concensus investor who generates original ideas can yield the *extraordinary*
+* Investors who use the same resources can only achieve the ordinary. Only the non-concensus investor can yield the *extraordinary* 
 
 GameStop Short Squeeze: A phenomenon in finance when there is a lack of supply and an excess of demand for the stock due to short sellers having to buy stocks to cover their short positions, thus causing a sharp increase in share price
 <br>
