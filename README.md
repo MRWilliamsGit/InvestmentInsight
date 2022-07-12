@@ -15,20 +15,17 @@ Motivation
 Main St. vs. Wall St. - Pushing Back Against the Establishment 
 <br>
 ![main](https://user-images.githubusercontent.com/78511177/178585851-20285751-0a5d-4ada-9ffb-9a4dddf7cbd8.png)
+<br> 
 <br> In January 2021, GameStop, an American video game retailer, experienced a short squeeze initiated by Reddit's subreddit r/wallstreetbets. Reddit is a social news website that started the retail vs. establishment movement in investments. Since then, Reddit and subreddits like r/wallstreetbets has transformed into a platform for sharing investment recommendations and discussion. 
 <br>
 <br>
 * As the number of market participants increase so will the demand for alternative data sources to generate alpha (above market returns)
-<br>
 * Unconventional data can provide insights that other market participants haven't considered
-<br>
 * Investors who use the same resources can only achieve the ordinary. Only the non-concensus investor can yield the *extraordinary* 
 <br>
 <br>
 <img width="602" alt="Gamestop " src="https://user-images.githubusercontent.com/78511177/178586080-3208a474-91a1-4cd6-8b06-0865e3b5de75.png">
-<br>
 (Source: Marketwatch)
-<br>
 <br>
 
 Problem Statement
