@@ -28,7 +28,7 @@ Main St. vs. Wall St. - Pushing Back Against the Establishment
 Problem Statement
 -----------------
 * The objective of the project is to convert informal text from subreddits like, r/wallstreetbets, into formalized, bite-sized bits from which everyday, retail investors can make informed, actionable trades. 
-* Generally, retail investors, don't have the time or financial acumen to parse through troves of information to make thoughtful investment decisions. The interactive Streamlit platform streamlines all of this in the following ways:
+* Generally, retail investors, don't have the time or financial acumen to parse through troves of information to make thoughtful investment decisions. The interactive Streamlit platform abstracts all of this away and provides value to the end user in the following ways:
 
     1) Users input a stock ticker and the model will compile relevant news threads regarding that stock to curate a generative summary
 
