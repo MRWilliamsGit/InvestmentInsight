@@ -73,7 +73,7 @@ License
 
 Citation
 --------
-@misc{fsdl_deforestation_detection,
+@misc{NLP_on_Financial_Statements,
   author = {Roshan Adusumilli},
   title = {NLP in the Stock Market},
   year = {2020},
