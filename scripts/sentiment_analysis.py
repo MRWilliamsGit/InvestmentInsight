@@ -6,13 +6,17 @@ import numpy as np
 import pandas as pd
 import pickle
 import pprint
+import string
+import matplotlib.pyplot as plt
 import os
 import re
 
 from tqdm import tqdm
+from collections import Counter
 from nltk.stem import WordNetLemmatizer
 from nltk.corpus import wordnet
 from nltk.corpus import stopwords
+from nltk.sentiment.vader import SentimentIntensityAnalyzer
 from nltk.tokenize import word_tokenize
 from collections import defaultdict, Counter
 from sklearn.feature_extraction.text import CountVectorizer
@@ -20,7 +24,7 @@ from sklearn.metrics import jaccard_score
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-#this is the class for Sentiment Analysis
+#Sentiment Analysis Class
 class Sentiment():
     def __init__(self):
         #Loughran McDonald Sentiment Word Lists to do sentiment analysis on Reddit posts
@@ -58,32 +62,44 @@ class Sentiment():
         all_stopwords = stopwords.words('english')
         lemmatized_words = [word for word in lemmatized_words if not word in all_stopwords]
 
-        return lemmatized_words
+        sentiment_list = []
+        with open('LM-SA-2020.txt', 'r') as file:
+            for line in file:
+                clear_line = line.replace("\n", '').replace(",", '').replace("'", '').strip()
+                word, emotion = clear_line.split(':')
 
-    # params:
-    # returns:
-    # DOES NOT YET WORK
-    def get_sent_words(self):
+                if word in lemmatized_words:
+                    sentiment_list.append(emotion)
 
-        sentiments = self.sentiment_words
+        print(sentiment_list)
+        w = Counter(sentiment_list)
+        print(w)
+
+        score = SentimentIntensityAnalyzer().polarity_scores(self)
+        if score['neg'] > score['pos']:
+            print("Negative Sentiment")
+        elif score['neg'] < score['pos']:
+            print("Positive Sentiment")
+        else:
+            print("Uncertainty Sentiment")
         
-        sentiment_df = pd.read_csv('data\LM-SA-2020.csv')
-        sentiment_df.columns = [column.lower() for column in sentiment_df.columns] # Lowercase the columns for ease of use
+        #sentiment_df = pd.read_csv('data\LM-SA-2020.csv')
+        #sentiment_df.columns = [column.lower() for column in sentiment_df.columns] # Lowercase the columns for ease of use
 
         # Remove unused information
-        sentiment_df = sentiment_df[sentiments + ['word']]
-        sentiment_df[sentiments] = sentiment_df[sentiments].astype(bool)
-        sentiment_df = sentiment_df[(sentiment_df[sentiments]).any(1)]
+        #sentiment_df = sentiment_df[sentiments + ['word']]
+        #sentiment_df[sentiments] = sentiment_df[sentiments].astype(bool)
+        #sentiment_df = sentiment_df[(sentiment_df[sentiments]).any(1)]
 
         # Apply the same preprocessing to these words as the 10-k words
-        sentiment_df['word'] = lemmatize_words(sentiment_df['word'].str.lower())
-        sentiment_df = sentiment_df.drop_duplicates('word')
+        #sentiment_df['word'] = lemmatize_words(sentiment_df['word'].str.lower())
+        #sentiment_df = sentiment_df.drop_duplicates('word')
 
-        return sentiment_df
+        return 
 
     # params:
     # returns:
-    #Generate a bag of words that counts the number of sentiment words in each Reddit post
+    # Generate a bag of words that counts the number of sentiment words in each Reddit post
     # NOT YET TESTED
     def get_bag_of_words(sentiment_df, posts):
 
@@ -97,6 +113,14 @@ class Sentiment():
 
         return bag_of_words.astype(int)
 
+    #TF-IDF 
+    #Using the sentiment word lists to generate sentiment TF-IDF from Reddit posts
+    #NOT YET TESTED
+    def get_tfidf(sentiment_words, posts):
+        vec = TfidfVectorizer(vocabulary=sentiment_words)
+        tfidf = vec.fit_transform(docs)
+        
+        return tfidf.toarray()
 
     #Jaccard Similarity
     #From Bag of Words calculate jaccard similarity 
@@ -112,15 +136,6 @@ class Sentiment():
         
         return jaccard_similarities
 
-
-    #TF-IDF 
-    # Using the sentiment word lists to generate sentiment TF-IDF from Reddit posts
-    # NOT YET TESTED
-    def get_tfidf(sentiment_words, posts):
-        vec = TfidfVectorizer(vocabulary=sentiment_words)
-        tfidf = vec.fit_transform(docs)
-        
-        return tfidf.toarray()
 
     #Cosine Similarity
     #Use TF-IDF values to calculate the cosine similarity 
@@ -141,6 +156,13 @@ class Sentiment():
         lemlist = self.data_prep(posts_df)
         sentiment_df = self.get_sent_words()
         bag = self.get_bag_of_words(sentiment_df, lemlist)
+
+        #Sentiment Analysis & Plot
+        fig, ax1 = plt.subplots()
+        ax1.bar(w.keys(), w.values())
+        fig.autofmt_xdate()
+        plt.savefig('graph.png')
+        plt.show()
 
         #return ans
 
