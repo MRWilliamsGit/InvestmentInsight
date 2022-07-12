@@ -19,11 +19,11 @@ Main St. vs. Wall St. - Pushing Back Against the Establishment
 <br> Hedge funds and other financial institutions are know for colluding and profiting off of insider trading and other shared secrets. In 2021, GameStop, an American video game retailer, experienced a short squeeze initiated by Reddit's subreddit r/wallstreetbets. Reddit is a social news website that started the retail vs. establishment movement in investments. Since then, Reddit and subreddits like r/wallstreetbets has transformed into a platform for sharing investment recommendations and discussion. 
 
 <br>
-* As more players participate in markets, alternative data sources, like social media & satellite imagery, are being utilized 
+* As more players participate in markets, alternative data sources are being utilized to generate alpha or above market returns
 <br>
-* Unconventional, unstructured data sources can provide insights that other market participants don't yet have or aren't considering
+* Unconventional data can provide insights that other market participants haven't considered
 <br>
-* Investors who use the same resources can only achive the ordinary. Only the non-concensus investor who generates original ideas can yield the *extraordinary*. In finance, returns generated above the market is called alpha. 
+* Investors who use the same resources can only achieve the ordinary. Only the non-concensus investor who generates original ideas can yield the *extraordinary*
 
 GameStop Short Squeeze: A phenomenon in finance when there is a lack of supply and an excess of demand for the stock due to short sellers having to buy stocks to cover their short positions, thus causing a sharp increase in share price
 <br>
