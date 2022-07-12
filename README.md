@@ -18,14 +18,6 @@ Main St. vs. Wall St. - Pushing Back Against the Establishment
 <br> In January 2021, GameStop, an American video game retailer, experienced a short squeeze initiated by Reddit's subreddit r/wallstreetbets. Reddit is a social news website that started the retail vs. establishment movement in investments. Since then, Reddit and subreddits like r/wallstreetbets has transformed into a platform for sharing investment recommendations and discussion. 
 <br>
 <br>
-<img width="602" alt="Gamestop " src="https://user-images.githubusercontent.com/78511177/178586080-3208a474-91a1-4cd6-8b06-0865e3b5de75.png">
-<br>
-Short Squeeze: A phenomenon in finance when there is a lack of supply and an excess of demand for the stock due to short sellers having to buy stocks to cover their short positions, thus causing a sharp increase in share price
-<br>
-<br>
-(Sources: Marketwatch & Wikipedia)
-<br>
-<br>
 * As the number of market participants increase so will the demand for alternative data sources to generate alpha (above market returns)
 <br>
 * Unconventional data can provide insights that other market participants haven't considered
@@ -33,7 +25,11 @@ Short Squeeze: A phenomenon in finance when there is a lack of supply and an exc
 * Investors who use the same resources can only achieve the ordinary. Only the non-concensus investor can yield the *extraordinary* 
 <br>
 <br>
-
+<img width="602" alt="Gamestop " src="https://user-images.githubusercontent.com/78511177/178586080-3208a474-91a1-4cd6-8b06-0865e3b5de75.png">
+<br>
+(Source: Marketwatch)
+<br>
+<br>
 
 Problem Statement
 -----------------
