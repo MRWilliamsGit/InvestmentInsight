@@ -1,39 +1,44 @@
-from scripts.API_tools import access_API, API_request
-from scripts.data_tools import makecloud, maketitlecloud
+from scripts.API_tools import API_request
+from scripts.data_tools import makecloud, make_cloud_chunks
 from scripts.summary_classes import ExFinSummarizer, GenFinSummarizer
-import pandas as pd
-import nltk
-import numpy as np
-import pandas as pd
-import pickle
-import pprint
-import reddit_helper
-import os
-
-from tqdm import tqdm
+from scripts.sentiment_analysis import Sentiment
+import streamlit as st
 
 
 def main():
 
-    searchterm = "AAPL"
+    st.title("Stock Support")
+    searchterm = st.text_input("Enter a stock name. Ex: AAPL, NVDA, AMZN", " ")
 
-    headers = access_API()
-    df = API_request(headers, searchterm)
-    block = makecloud(df)
-    #block = maketitlecloud(df)
+    if searchterm != " ":
+        # get reddit posts
+        df = API_request(searchterm)
+        st.write("Number of news posts found: ", len(df))
 
-    # generative summarization
-    # returns 200 word summary
-    gfs = GenFinSummarizer()
-    output = gfs.summarize(block)
-    sentiment = data_prep(self, output)
+        if len(df) < 1:
+            st.error(
+                "No Reddit news posts were found for this searchterm. Please try a different stock."
+            )
+        else:
+            with st.spinner("Generating Summary"):
+                # generative summarization
+                # length = the length of summary to return for each text chunk
+                text_list = make_cloud_chunks(df)
+                gfs = GenFinSummarizer()
+                output = gfs.summarize(text_list, length=400)
+            st.write(output)
 
-    # extractive summarization
-    #top_n = the number of sentences to extract
-    #efs = ExFinSummarizer()
-    #output = efs.summarize(block, top_n=10)
+            # extractive summarization
+            # top_n = the number of sentences to extract
+            # block = makecloud(df)
+            # efs = ExFinSummarizer()
+            # output = efs.summarize(block, top_n=5)
+            # print(output)
+            # st.write(output)
 
-    print(sentiment)
+            # sentiment analysis
+            #sent = Sentiment()
+            #sent.data_prep(df)
 
 
 if __name__ == "__main__":
