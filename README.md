@@ -17,13 +17,14 @@ Main St. vs. Wall St. - Pushing Back Against the Establishment
 <br>
 <br>
 
+[image](/Users/derrickadam/Documents/GitHub/SocialMediaNLP/Images/main.png)
 
 <br>
 <br> In January 2021, GameStop, an American video game retailer, experienced a short squeeze initiated by Reddit's subreddit r/wallstreetbets. Reddit is a social news website that started the retail vs. establishment movement in investments. Since then, Reddit and subreddits like r/wallstreetbets has transformed into a platform for sharing investment recommendations and discussion. 
 <br>
 <br>
 
-![](Gamestop.png)
+![](/Users/derrickadam/Documents/GitHub/SocialMediaNLP/Images/Gamestop.png)
 <br>
 <br>
 * As the number of market participants increase so will the demand for alternative data sources to generate alpha (above market returns)
