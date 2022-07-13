@@ -4,7 +4,7 @@ import re
 from spacy.lang.en.stop_words import STOP_WORDS
 from spacy.cli.download import download
 import sys
-!{sys.executable} -m pip install -r requirements.txt
+#!{sys.executable} -m pip install -r requirements.txt
 
 import nltk
 import numpy as np
