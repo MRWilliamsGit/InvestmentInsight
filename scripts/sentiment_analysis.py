@@ -64,7 +64,7 @@ class Sentiment():
 
         return lemmatized_words
 
-    def Derrick_get_sent(self, lemmatized_words):
+    def get_sent(self, lemmatized_words):
 
         # Create sentiment list
         sentiment_list = []
@@ -86,11 +86,11 @@ class Sentiment():
 
         score = SentimentIntensityAnalyzer().polarity_scores(str(self))
         if score['neg'] > score['pos']:
-            print("Negative Sentiment")
+            print("Negative Sentiment - Buy Stock")
         elif score['neg'] < score['pos']:
-            print("Positive Sentiment")
+            print("Positive Sentiment - Sell Stock")
         else:
-            print("Uncertainty Sentiment")
+            print("Uncertainty Sentiment - Do Nothing")
         
         #sentiment_df = pd.read_csv('data\LM-SA-2020.csv')
         #sentiment_df.columns = [column.lower() for column in sentiment_df.columns] # Lowercase the columns for ease of use
