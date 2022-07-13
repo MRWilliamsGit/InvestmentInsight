@@ -86,11 +86,11 @@ class Sentiment():
 
         score = SentimentIntensityAnalyzer().polarity_scores(str(self))
         if score['neg'] > score['pos']:
-            print("Negative Sentiment - Buy Stock")
+            print("Negative Sentiment")
         elif score['neg'] < score['pos']:
-            print("Positive Sentiment - Sell Stock")
+            print("Positive Sentiment")
         else:
-            print("Uncertainty Sentiment - Do Nothing")
+            print("Uncertainty Sentiment")
         
         #sentiment_df = pd.read_csv('data\LM-SA-2020.csv')
         #sentiment_df.columns = [column.lower() for column in sentiment_df.columns] # Lowercase the columns for ease of use

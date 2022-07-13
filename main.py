@@ -31,7 +31,23 @@ def main():
             # sentiment analysis
             sent = Sentiment()
             lemwords = sent.data_prep(df)
-            sent.Derrick_get_sent(lemwords)
+            sent.get_sent(lemwords)
+    
+    # get prediction
+    if score['neg'] > score['pos']:
+        st.success("The sentiment is overly bearish, BUY the stock")
+    elif score['neg'] < score['pos']:
+        st.error("The sentiment is overly bullish, SELL the stock")
+    else:
+        st.error("The sentiment is uncertain. Do nothing. Wait for the right catch.")
+    
+    for prediction in predictions:
+        p = dict(prediction)
+
+    if p["confidences"][0] > p["confidences"][1]:
+        st.success("This text does not pertain to suicide.")
+    else:
+        st.error("This text discusses suicide or displays possible suicidal ideation.")
 
 if __name__ == "__main__":
     main()
