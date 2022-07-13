@@ -45,10 +45,10 @@ def main():
 
             # Show graph in UI
             st.header("Sentiment Graph")
-            st.write("Sentiment analysis of key words")
+            st.write("Sentiment analysis of key words by frequency of occurence")
             # CB 7.13 - Change to graph
-            #st.bar_chart(data=sentiment_counter_df, width=0, height=0, use_container_width=True)
-            st.write(sentiment_counter)
+            st.bar_chart(data=sentiment_counter_df, width=0, height=0, use_container_width=True)
+            #st.write(sentiment_counter_df)
 
 
 if __name__ == "__main__":
