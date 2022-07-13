@@ -4,6 +4,7 @@ import re
 from spacy.lang.en.stop_words import STOP_WORDS
 from spacy.cli.download import download
 import sys
+# CB 7.12 - Is this needed? 
 #!{sys.executable} -m pip install -r requirements.txt
 
 import nltk
@@ -12,7 +13,6 @@ import pandas as pd
 import pickle
 import pprint
 import os
-import re
 
 from tqdm import tqdm
 from nltk.stem import WordNetLemmatizer

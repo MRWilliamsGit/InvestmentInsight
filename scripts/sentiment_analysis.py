@@ -66,31 +66,25 @@ class Sentiment():
 
     def Derrick_get_sent(self, lemmatized_words):
 
+        # Create sentiment list
         sentiment_list = []
-        # CB additions
-        sentiment_df = pd.read_csv('data\LM-SA-2020.csv')
 
+        # Read sentiment csv into dataframe
+        sentiment_df = pd.read_csv('data\LM-SA-2020.csv')
+        
+        # Create dictionary of words to sentiments
         sentiment_dict = dict(list(zip(sentiment_df.word, sentiment_df.sentiment)))
-    
+
+        # Loop through words and check if they are in lemmatized_words. then append to list
         for word in sentiment_dict.keys():
             if word in lemmatized_words:
                 sentiment_list.append(sentiment_dict[word])
-        
-        # CB comment out
-        # with open('data\LM-SA-2020.txt', 'r') as file:
-        #     for line in file:
-        #         print(line)
-        #         #clear_line = line.replace("\n", '').replace(",", '').replace("'", '').strip()
-        #         word, emotion = line.split(' ')
-
-        #         if word in lemmatized_words:
-        #             sentiment_list.append(emotion)
 
         print(sentiment_list)
         w = Counter(sentiment_list)
         print(w)
 
-        score = SentimentIntensityAnalyzer().polarity_scores(self)
+        score = SentimentIntensityAnalyzer().polarity_scores(str(self))
         if score['neg'] > score['pos']:
             print("Negative Sentiment")
         elif score['neg'] < score['pos']:
