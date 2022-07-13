@@ -3,11 +3,8 @@ matplotlib
 networkx
 nltk
 numpy
-os
 wheel
 pandas
-pickle
-pprint
 pylint
 pytest
 pytest-cov
