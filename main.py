@@ -32,7 +32,7 @@ def main():
             ## sentiment analysis
             sent = Sentiment()
             lemwords = sent.data_prep(df)
-            sentiment_counter, max_sentiment = sent.get_sent(lemwords)
+            sentiment_counter_df, max_sentiment = sent.get_sent(lemwords)
 
             # Show analysis in UI
             st.header("Analysis")
@@ -47,8 +47,8 @@ def main():
             st.header("Sentiment Graph")
             st.write("Sentiment analysis of key words")
             # CB 7.13 - Change to graph
-            st.bar_chart(data=sentiment_counter, width=0, height=0, use_container_width=True)
-            #st.write(sentiment_counter)
+            #st.bar_chart(data=sentiment_counter_df, width=0, height=0, use_container_width=True)
+            st.write(sentiment_counter)
 
 
 if __name__ == "__main__":
