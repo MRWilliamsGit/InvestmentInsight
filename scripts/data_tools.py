@@ -11,7 +11,6 @@ import numpy as np
 import pandas as pd
 import pickle
 import pprint
-import reddit_helper
 import os
 import re
 
@@ -22,7 +21,7 @@ from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from collections import defaultdict, Counter
 from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.metrics import jaccard_similarity_score
+from sklearn.metrics import jaccard_score
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
@@ -219,7 +218,7 @@ def get_jaccard_similarity(bag_of_words_matrix):
     for i in range(len(bag_of_words_matrix)-1):
             u = bag_of_words_matrix[i]
             v = bag_of_words_matrix[i+1]
-            jaccard_similarities.append(jaccard_similarity_score(u,v))    
+            jaccard_similarities.append(jaccard_score(u,v))    
     
     return jaccard_similarities
 

@@ -29,9 +29,9 @@ def main():
             st.write(output)
 
             # sentiment analysis
-            # sent = Sentiment()
-            # lemwords = sent.data_prep(df)
-            # sent.Derrick_get_sent(lemwords)
+            sent = Sentiment()
+            lemwords = sent.data_prep(df)
+            sent.Derrick_get_sent(lemwords)
 
 if __name__ == "__main__":
     main()

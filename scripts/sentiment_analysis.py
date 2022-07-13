@@ -67,14 +67,24 @@ class Sentiment():
     def Derrick_get_sent(self, lemmatized_words):
 
         sentiment_list = []
-        with open('data\LM-SA-2020.txt', 'r') as file:
-            for line in file:
-                print(line)
-                #clear_line = line.replace("\n", '').replace(",", '').replace("'", '').strip()
-                word, emotion = line.split(' ')
+        # CB additions
+        sentiment_df = pd.read_csv('data\LM-SA-2020.csv')
 
-                if word in lemmatized_words:
-                    sentiment_list.append(emotion)
+        sentiment_dict = dict(list(zip(sentiment_df.word, sentiment_df.sentiment)))
+    
+        for word in sentiment_dict.keys():
+            if word in lemmatized_words:
+                sentiment_list.append(sentiment_dict[word])
+        
+        # CB comment out
+        # with open('data\LM-SA-2020.txt', 'r') as file:
+        #     for line in file:
+        #         print(line)
+        #         #clear_line = line.replace("\n", '').replace(",", '').replace("'", '').strip()
+        #         word, emotion = line.split(' ')
+
+        #         if word in lemmatized_words:
+        #             sentiment_list.append(emotion)
 
         print(sentiment_list)
         w = Counter(sentiment_list)
