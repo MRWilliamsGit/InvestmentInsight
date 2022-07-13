@@ -93,7 +93,7 @@ class Sentiment():
         sentiment_counter = Counter(sentiment_list)
 
         # Convert sentiment_counter dict to df for bar graph output
-        sentiment_counter_df = pd.DataFrame.from_dict(sentiment_counter, orient='index').reset_index()
+        sentiment_counter_df = pd.DataFrame({"Frequency":sentiment_counter})
 
         # Return highest sentiment based on lemmatized words
         sentiment_max = max(sentiment_counter.items(), key=lambda pair: int(pair[1]))
@@ -191,3 +191,4 @@ class Sentiment():
         plt.show()
 
         #return ans
+
