@@ -92,6 +92,9 @@ class Sentiment():
         # Get counts of sentiments we care about (Positive, Negative, Uncertainty)
         sentiment_counter = Counter(sentiment_list)
 
+        # Convert sentiment_counter dict to df for bar graph output
+        sentiment_counter_df = pd.DataFrame.from_dict(sentiment_counter, orient='index').reset_index()
+
         # Return highest sentiment based on lemmatized words
         sentiment_max = max(sentiment_counter.items(), key=lambda pair: int(pair[1]))
 
@@ -106,7 +109,7 @@ class Sentiment():
         #     print("Uncertainty Sentiment")
 
         # Return the count of sentiments and the most frequent sentiment for lemmatized words
-        return sentiment_counter, sentiment_max[0] #, score
+        return sentiment_counter_df, sentiment_max[0] #, score
         
         #sentiment_df = pd.read_csv('data\LM-SA-2020.csv')
         #sentiment_df.columns = [column.lower() for column in sentiment_df.columns] # Lowercase the columns for ease of use
