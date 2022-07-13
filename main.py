@@ -7,8 +7,8 @@ import streamlit as st
 
 def main():
 
-    st.title("Stock Support")
-    searchterm = st.text_input("Enter a stock name. Ex: AAPL, NVDA, AMZN", " ")
+    st.title("Reddit Stock Research Tool")
+    searchterm = st.text_input("Enter a stock ticker. Ex: AAPL, MSFT, TSLA")
 
     if searchterm != " ":
         # get reddit posts
@@ -26,20 +26,30 @@ def main():
                 text_list = make_cloud_chunks(df)
                 gfs = GenFinSummarizer()
                 output = gfs.summarize(text_list, length=400)
+            st.header("Summary")
             st.write(output)
 
-            # sentiment analysis
+            ## sentiment analysis
             sent = Sentiment()
             lemwords = sent.data_prep(df)
-            sent.get_sent(lemwords)
-    
-    # get prediction
-    if score['neg'] > score['pos']:
-        st.success("The sentiment is overly bearish, BUY the stock")
-    elif score['neg'] < score['pos']:
-        st.error("The sentiment is overly bullish, SELL the stock")
-    else:
-        st.error("The sentiment is uncertain. Do nothing. Wait for the right catch.")
+            sentiment_counter_df, max_sentiment = sent.get_sent(lemwords)
+
+            # Show analysis in UI
+            st.header("Analysis")
+            if max_sentiment == 'Negative':
+                st.success("The sentiment is overly bearish, BUY the stock")
+            elif max_sentiment == 'Positive':
+                st.error("The sentiment is overly bullish, SELL the stock")
+            else:
+                st.warning("The sentiment is uncertain. Do nothing. Wait for the right catch.")
+
+            # Show graph in UI
+            st.header("Sentiment Graph")
+            st.write("Sentiment analysis of key words")
+            # CB 7.13 - Change to graph
+            #st.bar_chart(data=sentiment_counter_df, width=0, height=0, use_container_width=True)
+            st.write(sentiment_counter)
+
 
 if __name__ == "__main__":
     main()
