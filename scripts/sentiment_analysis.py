@@ -27,13 +27,11 @@ from sklearn.metrics.pairwise import cosine_similarity
 #Sentiment Analysis Class
 class Sentiment():
     def __init__(self):
-        #Loughran McDonald Sentiment Word Lists to do sentiment analysis on Reddit posts
-        #Of the 7 available sentiments, only 3 are used: negative, postive, and uncertainty
-        sentiment_words = ['negative', 'positive', 'uncertainty']
 
-        nltk.download('stopwords')
-        nltk.download('wordnet')
-        nltk.download('omw-1.4')
+        #nltk.download('stopwords')
+        #nltk.download('wordnet')
+        #nltk.download('omw-1.4')
+        return
         
     # params: df of post info returned from API
     # returns: list of lematized words
@@ -80,17 +78,35 @@ class Sentiment():
             if word in lemmatized_words:
                 sentiment_list.append(sentiment_dict[word])
 
-        print(sentiment_list)
-        w = Counter(sentiment_list)
-        print(w)
+        # Loop through sentiment list to drop sentiments we do not want 
+        # Loughran McDonald Sentiment Word Lists to do sentiment analysis on Reddit posts
+        # Of the 7 available sentiments, only 3 are used: negative, postive, and uncertainty
+      
+        # 7.13 - REVISIT THIS Create list of indices to pop after loop
+        # sentiment_words = ['Negative', 'Positive', 'Uncertainty']
+        # pop_list = []
+        # for sentiment_idx in range(len(sentiment_list)):
+        #     if sentiment_list[sentiment_idx] not in sentiment_words:
+        #         pop_list.append(sentiment_idx)
 
-        score = SentimentIntensityAnalyzer().polarity_scores(str(self))
-        if score['neg'] > score['pos']:
-            print("Negative Sentiment")
-        elif score['neg'] < score['pos']:
-            print("Positive Sentiment")
-        else:
-            print("Uncertainty Sentiment")
+        # Get counts of sentiments we care about (Positive, Negative, Uncertainty)
+        sentiment_counter = Counter(sentiment_list)
+
+        # Return highest sentiment based on lemmatized words
+        sentiment_max = max(sentiment_counter.items(), key=lambda pair: int(pair[1]))
+
+        # CB 7.13 - Comment out until we figure out how to pass in the correct data
+        # Get sentiment polarity score
+        # score = SentimentIntensityAnalyzer().polarity_scores(str(self))
+        # if score['neg'] > score['pos']:
+        #     print("Negative Sentiment")
+        # elif score['neg'] < score['pos']:
+        #     print("Positive Sentiment")
+        # else:
+        #     print("Uncertainty Sentiment")
+
+        # Return the count of sentiments and the most frequent sentiment for lemmatized words
+        return sentiment_counter, sentiment_max[0] #, score
         
         #sentiment_df = pd.read_csv('data\LM-SA-2020.csv')
         #sentiment_df.columns = [column.lower() for column in sentiment_df.columns] # Lowercase the columns for ease of use
@@ -103,8 +119,6 @@ class Sentiment():
         # Apply the same preprocessing to these words as the 10-k words
         #sentiment_df['word'] = lemmatize_words(sentiment_df['word'].str.lower())
         #sentiment_df = sentiment_df.drop_duplicates('word')
-
-        return 
 
     # params:
     # returns:
