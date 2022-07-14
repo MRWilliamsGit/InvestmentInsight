@@ -1,7 +1,7 @@
 # Making Cents Out of Nonsense: <br> Applying NLP to Reddit for an Investment Edge
  ![image](https://user-images.githubusercontent.com/78511177/176003905-7eed8447-4bd7-43d5-98d0-ed475fe48a73.png)
 
-### AIPI 540 Deep Learning Applications
+## AIPI 540 Deep Learning Applications
 #### Project by: Colin Bryan, Maria Williams, and Derrick Adam
 #### Project Structure: Natural Language Processing Module
 #### Category: Social Media & News
