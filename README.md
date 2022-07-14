@@ -5,6 +5,8 @@
 AIPI 540 Deep Learning Applications
 <br> Natural Language Processing Module
 <br> Project by: Colin Bryan, Maria Williams, and Derrick Adam
+<br> Project Structure: NLP Pipeline
+<br> Category: Social Media & News
 
 [Streamlit Platform](https://mrwilliamsgit-socialmedianlp-main-yx3u2h.streamlitapp.com/)
 
@@ -42,7 +44,7 @@ Getting Started
 ```
 pip install -r requirements.txt
 ```
-2. Download the nltk modules required to run the application
+2. Download the nltk modules required to run the application by following these steps:
 ```
 python 
 import nltk
@@ -55,23 +57,39 @@ nltk.download('vader_lexicon')
 ```
 streamlit run main.py
 ```
-Project Structure: NLP Pipeline
------------------
 
-Data Sourcing & Processing
---------------------------
+Data Sourcing, Processing, & Modeling
+-------------------------------------
+* Data is sourced from the Reddit API by searching the key term entered by the user in the Streamlit User Interface. The API queries Reddit according to the search term entered by the user, retrieves the 100 most recent posts related to the search term, and returns posts categorized as "Company News" or "News" in a dataframe. 
+* If "News" posts aren't found, the user is prompted to enter a new search term.   
+* If "News" posts are found, the following steps take place:
 
-Modeling Details
-----------------
+    1) The Reddit posts are put through a data pipeline to extract phrases (by "chunking") from the title and content of the posts. 
+    
+    2) An overall summary is then generated from analyzing all of the returned posts by passing the text chunks through a generative summary model. This is displayed to the user in the User Interface.
+
+    3) Sentiment analysis is conducted by lemmatizing the Reddit posts and returning a list of lemmatized words from the posts. This list is then compared to the Loughran McDonald Sentiment Word, a popular word-to-sentiment mapping repository in the Finance industry, to understand the frequency of sentiment-carrying words that occur in each Reddit post that is processed.
+    
+    4) A count of the frequency of sentiment-carrying words in the Reddit posts for the stock ticker is conducted and used to make a recommendation on buying, selling, or waiting on the stock. A graph of sentiment-carrying word frequency is also displayed to the user through the User Interface
 
 Non-DL Discussion
 ---------------
+@ Derrick/Maria - what is this?
+
 
 Model Evaluation & Results
 ----------------------------
+* We have found that this tool works better for blue-chip stocks that are popular on Reddit. For stocks with less trading volume, "News" posts often do not exist or the ticker is mistaken for a different topic on Reddit. We recommend only using this tool for blue-chip stocks.
+
+@ Derrick/Maria - Anything else to add here regarding evaluation? 
+
 
 Future Work
 ------------
+* Improving the query passed to the Reddit API to ensure only stock-related posts are returned 
+* Applying weights to the posts based on the subreddit where the post is found (e.g., r/wallstreetbets, r/stocks, r/superstonk, r/personalfinance, r/investing, etc.)
+
+@Derrick/Maria - Anything else?
 
 Conclusion
 ----------
@@ -84,11 +102,15 @@ Additional Resources
 --------------------
 * NLP in the Stock Market - Project by Roshan Adusumilli: [here](https://towardsdatascience.com/nlp-in-the-stock-market-8760d062eb92#:~:text=Machine%20learning%20models%20implemented%20in,forms%20to%20forecast%20stock%20movements.)
 
+* Loughran McDonald-SA-2020 Sentiment Word List: [here](https://researchdata.up.ac.za/articles/dataset/Loughran_McDonald-SA-2020_Sentiment_Word_List/14401178)
+
 Notebooks
 ---------
+@ Derrick/Maria - Needed?
 
 License
 -------
+@ Derrick/Maria - Needed?
 
 Citation
 --------
@@ -100,3 +122,4 @@ Citation
   journal = {GitHub repository},
   howpublished = {\url{https://github.com/roshan-adusumilli/nlp_10-ks}}
 }
+
