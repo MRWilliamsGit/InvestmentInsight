@@ -32,9 +32,9 @@ Problem Statement
 
     1) Users input a stock ticker and the model will compile relevant news threads regarding that stock to curate a generative summary
 
-    2) Sentiment analysis will label the news aggregation as postive, negative, or neutral
+    2) Sentiment analysis will label the news aggregation as postive, negative, or uncertain
 
-    3) Given that non-concensus investing yields superior returns, the platform will generate a buy reommendation when the sentiment is negative, a sell signal when the sentiment is negative, and do nothing when the sentiment is uncertain
+    3) Given that non-consensus investing yields superior returns, the platform will generate a buy reommendation when the sentiment is negative, a sell signal when the sentiment is negative, and do nothing when the sentiment is uncertain
 
 Getting Started
 ---------------
