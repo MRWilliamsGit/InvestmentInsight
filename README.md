@@ -38,7 +38,23 @@ Problem Statement
 
 Getting Started
 ---------------
-
+1. Clone the repository, create a virtual environment, and install the requirements needed to run the application
+```
+pip install -r requirements.txt
+```
+2. Download the nltk modules required to run the application
+```
+python 
+import nltk
+nltk.download('stopwords')
+nltk.download('wordnet')
+nltk.download('omw-1.4')
+nltk.download('vader_lexicon')
+```
+3. Start the Streamlit app
+```
+streamlit run main.py
+```
 Project Structure: NLP Pipeline
 -----------------
 
