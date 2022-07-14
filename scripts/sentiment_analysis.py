@@ -26,15 +26,10 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 #Sentiment Analysis Class
 class Sentiment():
+    # Init function
     def __init__(self):
+        return 
 
-        #nltk.download('stopwords')
-        #nltk.download('wordnet')
-        #nltk.download('omw-1.4')
-        return
-        
-    # params: df of post info returned from API
-    # returns: list of lematized words
     def data_prep(self, posts_df):
         #add titles and post bodies together
         textblock = ''
@@ -77,17 +72,6 @@ class Sentiment():
         for word in sentiment_dict.keys():
             if word in lemmatized_words:
                 sentiment_list.append(sentiment_dict[word])
-
-        # Loop through sentiment list to drop sentiments we do not want 
-        # Loughran McDonald Sentiment Word Lists to do sentiment analysis on Reddit posts
-        # Of the 7 available sentiments, only 3 are used: negative, postive, and uncertainty
-      
-        # 7.13 - REVISIT THIS Create list of indices to pop after loop
-        # sentiment_words = ['Negative', 'Positive', 'Uncertainty']
-        # pop_list = []
-        # for sentiment_idx in range(len(sentiment_list)):
-        #     if sentiment_list[sentiment_idx] not in sentiment_words:
-        #         pop_list.append(sentiment_idx)
 
         # Get counts of sentiments we care about (Positive, Negative, Uncertainty)
         sentiment_counter = Counter(sentiment_list)

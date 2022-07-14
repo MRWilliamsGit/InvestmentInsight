@@ -1,3 +1,4 @@
+# Make Imports
 from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
 
 import nltk
@@ -9,7 +10,7 @@ import numpy as np
 import networkx as nx
 from sklearn.feature_extraction.text import TfidfVectorizer
 
-#this is the class for generative summarization
+#Create class for generative summarization
 class GenFinSummarizer():
     def __init__(self):
 
