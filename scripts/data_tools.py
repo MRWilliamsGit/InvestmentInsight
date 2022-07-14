@@ -21,7 +21,7 @@ from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from collections import defaultdict, Counter
 from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.metrics import jaccard_score
+#from sklearn.metrics import jaccard_score
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
@@ -160,7 +160,6 @@ def lemmatize_words_words(words):
 
     return lemmatized_words
 
-
 #Remove Stopwords
 def remove_stopwords(summary):
     all_stopwords = stopwords.words('english')
@@ -168,7 +167,6 @@ def remove_stopwords(summary):
     text_tokens = word_tokenize(summary)
     tokens_without_sw = [word for word in text_tokens if not word in all_stopwords]
     return tokens_without_sw
-
 
 #Loughran McDonald Sentiment Word Lists to do sentiment analysis on Reddit posts
 #Of the 7 available sentiments, only 3 are used: negative, postive, and uncertainty
@@ -196,39 +194,23 @@ def get_bag_of_words(sentiment_words, posts):
 # Using the sentiment word lists to generate sentiment TF-IDF from Reddit posts
 def get_tfidf(sentiment_words, posts):
     vec = TfidfVectorizer(vocabulary=sentiment_words)
-    tfidf = vec.fit_transform(docs)
+    tfidf = vec.fit_transform(posts)
     
     return tfidf.toarray()
-
-#Streamlit Classification
-def streamlit_classification(posts):
-    if st.button('positive'):
-        st.write('Buy the stock')
-    elif st.button('negative'):
-        st.write('Sell the stock')
-    st.write('Do nothing. Wait for the right catch.')
-
-
-#Jaccard Similarity
-#From Bag of Words calculate jaccard similarity 
-def get_jaccard_similarity(bag_of_words_matrix):
-    jaccard_similarities = []
-    bag_of_words_matrix = np.array(bag_of_words_matrix, dtype=bool)
-    
-    for i in range(len(bag_of_words_matrix)-1):
-            u = bag_of_words_matrix[i]
-            v = bag_of_words_matrix[i+1]
-            jaccard_similarities.append(jaccard_score(u,v))    
-    
-    return jaccard_similarities
 
 
 #Cosine Similarity
 #Use TF-IDF values to calculate the cosine similarity 
-def get_cosine_similarity(tfidf_matrix):
+def get_cosine_similarity(posts_df):
     cosine_similarities = []    
     
-    for i in range(len(tfidf_matrix)-1):
-        cosine_similarities.append(cosine_similarity(tfidf_matrix[i].reshape(1, -1),tfidf_matrix[i+1].reshape(1, -1))[0,0])
+    for i in range(len(posts_df)-1):
+        cosine_similarities.append(df.loc[df.index[i], 'insert header'])
     
-    return cosine_similarities
+    count_vectorizer = CountVectorizer(stop_words='english')
+    count_vectorizer = CountVectorizer()
+    sparse_matrix = count_vectorizer.fit_transform(cosine_similarities)
+
+    print(cosine_similarity(sparse_matrix, sparse_matrix))
+    
+    return 
