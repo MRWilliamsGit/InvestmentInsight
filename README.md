@@ -5,8 +5,7 @@
 #### Project by: Colin Bryan, Maria Williams, and Derrick Adam
 #### Project Structure: Natural Language Processing Module
 #### Category: Social Media & News
-
-[Streamlit Platform](https://mrwilliamsgit-socialmedianlp-main-yx3u2h.streamlitapp.com/)
+#### Public-facing Application: [Streamlit Platform](https://mrwilliamsgit-socialmedianlp-main-yx3u2h.streamlitapp.com/)
 
 Motivation
 ----------
@@ -38,7 +37,7 @@ Problem Statement
 
 Getting Started
 ---------------
-1. Clone the repository, create a virtual environment, and install the requirements needed to run the application
+1. To run locally: Clone the repository, create a virtual environment, and install the requirements needed to run the application
 ```
 pip install -r requirements.txt
 ```
