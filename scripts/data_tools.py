@@ -21,7 +21,7 @@ from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from collections import defaultdict, Counter
 from sklearn.feature_extraction.text import CountVectorizer
-#from sklearn.metrics import jaccard_score
+from sklearn.metrics import jaccard_score
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
@@ -194,16 +194,16 @@ def get_bag_of_words(sentiment_words, posts):
 # Using the sentiment word lists to generate sentiment TF-IDF from Reddit posts
 def get_tfidf(sentiment_words, posts):
     vec = TfidfVectorizer(vocabulary=sentiment_words)
-    tfidf = vec.fit_transform(posts)
+    tfidf = vec.fit_transform(docs)
     
     return tfidf.toarray()
-
 
 #Cosine Similarity
 #Use TF-IDF values to calculate the cosine similarity 
 def get_cosine_similarity(posts_df):
     cosine_similarities = []    
     
+    # 7/15 - Update 'insert header' with whatever header is in posts_df
     for i in range(len(posts_df)-1):
         cosine_similarities.append(df.loc[df.index[i], 'insert header'])
     
