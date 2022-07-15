@@ -11,7 +11,7 @@ def main():
     # Streamlit title 
     st.title("Reddit Stock Research Tool")
     # Create search functionality
-    searchterm = st.text_input("Enter a stock ticker. Ex: AAPL, MSFT, TSLA")
+    searchterm = st.text_input("Enter a stock ticker. Ex: AAPL, MSFT, TSLA", " ")
 
     # Execute search if it's not blank
     if searchterm != " ":
