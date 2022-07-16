@@ -31,7 +31,7 @@ class Sentiment():
         nltk.download('stopwords')
         nltk.download('wordnet')
         nltk.download('omw-1.4')
-        
+
         return 
 
     def data_prep(self, posts_df):
@@ -67,7 +67,8 @@ class Sentiment():
         sentiment_list = []
 
         # Read sentiment csv into dataframe
-        sentiment_df = pd.read_csv('data\LM-SA-2020.csv')
+        sentiment_df = pd.read_csv('https://raw.githubusercontent.com/MRWilliamsGit/SocialMediaNLP/main/data/LM-SA-2020.csv')
+        #sentiment_df = pd.read_csv('data\LM-SA-2020.csv')
         
         # Create dictionary of words to sentiments
         sentiment_dict = dict(list(zip(sentiment_df.word, sentiment_df.sentiment)))
