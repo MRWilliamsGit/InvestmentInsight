@@ -28,6 +28,9 @@ from sklearn.metrics.pairwise import cosine_similarity
 class Sentiment():
     # Init function
     def __init__(self):
+        nltk.download('stopwords')
+        nltk.download('wordnet')
+        
         return 
 
     def data_prep(self, posts_df):
