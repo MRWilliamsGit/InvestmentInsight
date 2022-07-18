@@ -103,7 +103,7 @@ Conclusion
 "Be fearful when others are greedy. Be greedy when others are fearful." - Warren Buffett
 * Being non-concensus in the way one invests is the only way to generate superior returns 
 * Using non-traditional data sources, like Reddit, have come into vogue and came help all types of investors glean insights they would not otherwise have readily available
-* With technology and the right mindset, retail investors can level the playing field and even beat financial institutions at their own game
+* By coupling technology and discipline, retail investors can level the playing field and even beat financial institutions at their own game
 
 Additional Resources
 --------------------
