@@ -92,7 +92,7 @@ INSERT IMAGES for RESULTS
 Future Work
 ------------
 * Improve the query passed to the Reddit API to ensure only stock-related posts are returned
-* Generate more posts fore queried ticker, whether popular or not 
+* Generate more posts for both popular and less popular tickers
 * Apply weights to the posts based on the subreddit where the post is found (e.g., r/wallstreetbets, r/stocks, r/superstonk, r/personalfinance, r/investing, etc.)
 
 @Derrick/Maria - Anything else?
