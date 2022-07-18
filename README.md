@@ -65,10 +65,10 @@ Data Sourcing, Processing, & Modeling
      
      3) If "News" posts aren't found, the user is prompted to enter a new search term. If "News" posts are found,         the following steps happen under the hood:
      
-           * The Reddit posts are put through a data pipeline extracting phrases from the title and content of                 the posts. This process is called "chunking" <br>
-           * From analyzing all of the returned posts by passing the text chunks through a generative summary                   model that summary is rendered onto the User Interface <br>
-           * Sentiment analysis is conducted by lemmatizing the Reddit posts and returning a list of lemmatized                 words from the posts. This list is then compared to the Loughran-McDonald Sentiment Word List, a                   popular finance word-to-sentiment mapping repository, to understand the frequency of sentiment-                   carrying words that occur in each Reddit post that is processed <br>
-           * A count of the frequency of sentiment-carrying words in the Reddit posts for the queried stock                     ticker is conducted and used to make a recommendation on buying, selling, or waiting on the stock. A               graph of sentiment-carrying word frequency is also displayed through the User Interface
+           * The Reddit posts are put through a data pipeline extracting phrases from the title and content of                  the posts. This process is called "chunking" <br>
+           * From analyzing all of the returned posts by passing the text chunks through a generative summary                  model that summary is rendered onto the User Interface <br>
+           * Sentiment analysis is conducted by lemmatizing the Reddit posts and returning a list of lemmatized                words from the posts. This list is then compared to the Loughran-McDonald Sentiment Word List, a                  popular finance word-to-sentiment mapping repository, to understand the frequency of sentiment-                    carrying words that occur in each Reddit post that is processed <br>
+           * A count of the frequency of sentiment-carrying words in the Reddit posts for the queried stock                    ticker is conducted and used to make a recommendation on buying, selling, or waiting on the stock. A              graph of sentiment-carrying word frequency is also displayed through the User Interface
 
 Non-DL Discussion
 ---------------
@@ -104,11 +104,11 @@ Additional Resources
 
 Notebooks
 ---------
-@ Derrick/Maria - Needed?
+@ Derrick/Maria - Needed? - Not needed, but we can convert .py to notebooks as well if we like
 
 License
 -------
-@ Derrick/Maria - Needed?
+@ Derrick/Maria - Needed? - 
 
 Citation
 --------
