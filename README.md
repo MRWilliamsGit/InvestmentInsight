@@ -112,7 +112,7 @@ Additional Resources
 
 Notebooks
 ---------
-@ Derrick/Maria - Needed? - Not needed, but we can convert .py to notebooks as well if we like
+@ Derrick/Maria - Needed? - Not needed, but we can convert .py to notebooks if we like
 
 License
 -------
