@@ -71,7 +71,7 @@ Data Sourcing, Processing, & Modeling
 
 Non-DL Discussion
 ---------------
-@ Derrick/Maria - what is this?
+DA: Filling in
 
 
 Model Evaluation & Results
