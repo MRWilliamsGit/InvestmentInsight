@@ -80,15 +80,20 @@ DA: Filling in
 
 Model Evaluation & Results
 ----------------------------
-* We have found that this tool works better for blue-chip stocks that are popular on Reddit. For stocks with less trading volume, "News" posts often do not exist or the ticker is mistaken for a different topic on Reddit. We recommend only using this tool for blue-chip stocks.
+
+* The tool works best for popular stocks on Reddit
+* For stocks with less trading volume, "News" posts often do not exist or the ticker is mistaken for a different topic on Reddit
+* For best results, search for more popular assets, like blue-chip stocks and cryptocurrencies
 
 @ Derrick/Maria - Anything else to add here regarding evaluation? 
+INSERT IMAGES for RESULTS
 
 
 Future Work
 ------------
-* Improving the query passed to the Reddit API to ensure only stock-related posts are returned 
-* Applying weights to the posts based on the subreddit where the post is found (e.g., r/wallstreetbets, r/stocks, r/superstonk, r/personalfinance, r/investing, etc.)
+* Improve the query passed to the Reddit API to ensure only stock-related posts are returned
+* Generate more posts fore queried ticker, whether popular or not 
+* Apply weights to the posts based on the subreddit where the post is found (e.g., r/wallstreetbets, r/stocks, r/superstonk, r/personalfinance, r/investing, etc.)
 
 @Derrick/Maria - Anything else?
 
