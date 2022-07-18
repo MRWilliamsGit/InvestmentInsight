@@ -5,7 +5,7 @@
 #### Project by: Colin Bryan, Maria Williams, and Derrick Adam
 #### Project Structure: Natural Language Processing Module
 #### Category: Social Media & News
-#### Public-facing Application: [Streamlit Platform](https://mrwilliamsgit-socialmedianlp-main-yx3u2h.streamlitapp.com/)
+#### Application: [Streamlit Platform](https://mrwilliamsgit-socialmedianlp-main-yx3u2h.streamlitapp.com/)
 
 Motivation
 ----------
