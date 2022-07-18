@@ -58,15 +58,19 @@ streamlit run main.py
 Data Sourcing, Processing, & Modeling
 -------------------------------------
 * Data is sourced from the Reddit API when a user enters a stock's ticker on the Streamlit User Interface in the following steps:
-<br>
+
      1) API queries Reddit for the search term
+    
      2) Retrieves the 100 most recent posts related to the search term and returns posts categorized as "Company           News" or "News" as a dataframe
+     
      3) If "News" posts aren't found, the user is prompted to enter a new search term. If "News" posts are found,         the following steps happen under the hood:
-     <br>
-     1) The Reddit posts are put through a data pipeline extracting phrases from the title and content of the             posts. This process is called "chunking" 
-     2) From analyzing all of the returned posts by passing the text chunks through a generative summary model             that summary is rendered onto the User Interface
-     3) Sentiment analysis is conducted by lemmatizing the Reddit posts and returning a list of lemmatized words           from the posts. This list is then compared to the Loughran-McDonald Sentiment Word List, a popular finance         word-to-sentiment mapping repository, to understand the frequency of sentiment-carrying words that occur           in each Reddit post that is processed.
-     4) A count of the frequency of sentiment-carrying words in the Reddit posts for the queried stock ticker is           conducted and used to make a recommendation on buying, selling, or waiting on the stock. A graph of               sentiment-carrying word frequency is also displayed through the User Interface
+            * The Reddit posts are put through a data pipeline extracting phrases from the title and content of                 the posts. This process is called "chunking" 
+            
+            * From analyzing all of the returned posts by passing the text chunks through a generative summary                   model that summary is rendered onto the User Interface
+            
+            * Sentiment analysis is conducted by lemmatizing the Reddit posts and returning a list of lemmatized                 words from the posts. This list is then compared to the Loughran-McDonald Sentiment Word List, a                   popular finance word-to-sentiment mapping repository, to understand the frequency of sentiment-                   carrying words that occur in each Reddit post that is processed.
+     
+            * A count of the frequency of sentiment-carrying words in the Reddit posts for the queried stock                     ticker is conducted and used to make a recommendation on buying, selling, or waiting on the stock. A               graph of sentiment-carrying word frequency is also displayed through the User Interface
 
 Non-DL Discussion
 ---------------
