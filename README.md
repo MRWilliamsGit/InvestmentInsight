@@ -87,7 +87,7 @@ Model Evaluation & Results
 
 @ Derrick/Maria - Anything else to add here regarding evaluation? 
 INSERT IMAGES for RESULTS
-INSERT .MOV DEMO
+<br> INSERT .MOV DEMO
 
 
 Future Work
