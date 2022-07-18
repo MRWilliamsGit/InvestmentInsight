@@ -87,6 +87,7 @@ Model Evaluation & Results
 
 @ Derrick/Maria - Anything else to add here regarding evaluation? 
 INSERT IMAGES for RESULTS
+INSERT .MOV DEMO
 
 
 Future Work
@@ -96,7 +97,6 @@ Future Work
 * Apply weights to the posts based on the subreddit where the post is found (e.g., r/wallstreetbets, r/stocks, r/superstonk, r/personalfinance, r/investing, etc.)
 * Expand support for alternative asset classes, like cryptocurrencies and commodities
 
-@Derrick/Maria - Anything else?
 
 Conclusion
 ----------
@@ -117,7 +117,7 @@ Notebooks
 
 License
 -------
-@ Derrick/Maria - Needed? - 
+@ Derrick/Maria - Needed? - Doesn't seem so
 
 Citation
 --------
