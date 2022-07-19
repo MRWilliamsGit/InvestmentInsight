@@ -1,14 +1,13 @@
-# Make Imports
-from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
-
 import nltk
 from nltk import download as nltk_download
 from nltk.tokenize import sent_tokenize
 from nltk.corpus import stopwords
 from nltk.cluster.util import cosine_distance
+
 import numpy as np
 import networkx as nx
 from sklearn.feature_extraction.text import TfidfVectorizer
+from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
 
 #Create class for generative summarization
 class GenFinSummarizer():
