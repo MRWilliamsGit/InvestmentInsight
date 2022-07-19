@@ -86,11 +86,13 @@ Model Evaluation & Results
 * For best results, search for more popular assets, like blue-chip stocks and cryptocurrencies
 <img width="434" alt="Screen Shot 2022-07-19 at 6 14 19 PM" src="https://user-images.githubusercontent.com/78511177/179857576-74286598-141e-42b3-8d66-b09eeb82ded7.png">
 
-<img width="432" alt="Screen Shot 2022-07-19 at 6 16 44 PM" src="https://user-images.githubusercontent.com/78511177/179857811-b1fa053f-c93e-4ed6-a252-1ba75c7fe814.png">
-
 <br>
 
-<img width="250" alt="Screen Shot 2022-07-19 at 6 13 06 PM" src="https://user-images.githubusercontent.com/78511177/179857412-096b6fd2-ce49-4d6d-a284-05a61ca5703d.png">
+<img width="432" alt="Screen Shot 2022-07-19 at 6 16 44 PM" src="https://user-images.githubusercontent.com/78511177/179857811-b1fa053f-c93e-4ed6-a252-1ba75c7fe814.png">
+
+
+
+
 
 
 
