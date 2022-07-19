@@ -96,6 +96,8 @@ Future Work
 * Generate more posts for both popular and less popular tickers
 * Apply weights to the posts based on the subreddit where the post is found (e.g., r/wallstreetbets, r/stocks, r/superstonk, r/personalfinance, r/investing, etc.)
 * Expand support for alternative asset classes, like cryptocurrencies and commodities
+* Enable support for phone and tablet
+* Allow for scale: multiple users across devices should simultaneously be able to generate results
 
 
 Conclusion
