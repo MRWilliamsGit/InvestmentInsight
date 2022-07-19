@@ -113,6 +113,8 @@ Additional Resources
 
 * Loughran McDonald-SA-2020 Sentiment Word List: [here](https://researchdata.up.ac.za/articles/dataset/Loughran_McDonald-SA-2020_Sentiment_Word_List/14401178)
 
+* Famed Investor Howard Marks' Memo on Non-Consensus Investing: [here] (https://www.oaktreecapital.com/docs/default-source/memos/1993-02-15-the-value-of-predictions-or-where-39-d-all-this-rain-come-from.pdf?sfvrsn=6fbc0f65_2)
+
 Notebooks
 ---------
 @ Derrick/Maria - Needed? - Not needed, but we can convert .py to notebooks if we like
