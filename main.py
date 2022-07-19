@@ -49,13 +49,13 @@ def main():
             st.header("Analysis")
             # If most frequent sentiment is negative, recommend to buy
             if max_sentiment == 'Negative':
-                st.success("The sentiment is overly bearish, BUY the stock")
+                st.success("Sentiment is overly bearish. Suggestion is to BUY the stock")
             # If most frequent sentiment is positive, recommend to sell
             elif max_sentiment == 'Positive':
-                st.error("The sentiment is overly bullish, SELL the stock")
+                st.error("Sentiment is overly bullish. Suggestion is to SELL the stock")
             # If most frequent sentiment is not positive or negative, don't make a recommendation
             else:
-                st.warning("The sentiment is uncertain. Do nothing. Wait for the right catch.")
+                st.warning("Sentiment is uncertain. Do nothing and wait for the right catch.")
 
             # Show graph in UI of different sentiments
             st.header("Sentiment Graph")
