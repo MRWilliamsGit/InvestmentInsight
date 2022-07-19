@@ -1,7 +1,7 @@
 # Making Cents Out of Nonsense: <br> Applying NLP to Reddit for an Investment Edge
  ![image](https://user-images.githubusercontent.com/78511177/176003905-7eed8447-4bd7-43d5-98d0-ed475fe48a73.png)
 
-### AIPI 540 Deep Learning Applications
+#### AIPI 540 Deep Learning Applications
 #### Project by: Colin Bryan, Maria Williams, and Derrick Adam
 #### Project Structure: Natural Language Processing Module
 #### Category: Social Media & News
@@ -84,9 +84,12 @@ Model Evaluation & Results
 * The tool works best for popular stocks on Reddit
 * For stocks with less trading volume, "News" posts often do not exist or the ticker is mistaken for a different topic on Reddit
 * For best results, search for more popular assets, like blue-chip stocks and cryptocurrencies
+![Reddit Stock Research Tool](https://user-images.githubusercontent.com/78511177/179856258-422676f0-2e8f-48a0-85b0-5cf407e2559a.jpeg)
 
-@ Derrick/Maria - Anything else to add here regarding evaluation? 
-INSERT IMAGES for RESULTS
+![AAPL](https://user-images.githubusercontent.com/78511177/179856279-578bdfc3-d6db-4e4e-b68c-525655620aef.jpeg)
+
+
+
 <br> INSERT .MOV DEMO
 
 
