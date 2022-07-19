@@ -83,11 +83,16 @@ Model Evaluation & Results
 
 * The tool works best for popular stocks on Reddit
 * For stocks with less trading volume, "News" posts often do not exist or the ticker is mistaken for a different topic on Reddit
-* For best results, search for more popular assets, like blue-chip stocks and cryptocurrencies
+* For best results, search for more popular assets, like blue-chip stocks
+
+Results Based on Sentiment Analysis:
+
+Suggested Buy Signal
 <img width="434" alt="Screen Shot 2022-07-19 at 6 14 19 PM" src="https://user-images.githubusercontent.com/78511177/179857576-74286598-141e-42b3-8d66-b09eeb82ded7.png">
 
 <br>
 
+Suggested Sell Signal
 <img width="432" alt="Screen Shot 2022-07-19 at 6 16 44 PM" src="https://user-images.githubusercontent.com/78511177/179857811-b1fa053f-c93e-4ed6-a252-1ba75c7fe814.png">
 
 
@@ -105,7 +110,7 @@ Future Work
 * Generate more posts for both popular and less popular tickers
 * Apply weights to the posts based on the subreddit where the post is found (e.g., r/wallstreetbets, r/stocks, r/superstonk, r/personalfinance, r/investing, etc.)
 * Expand support for alternative asset classes, like cryptocurrencies and commodities
-* Enable support for phone and tablet
+* Enable cross-platform support for phone and tablet
 * Allow for scale: multiple users across devices should simultaneously be able to generate results
 
 
