@@ -84,9 +84,12 @@ Model Evaluation & Results
 * The tool works best for popular stocks on Reddit
 * For stocks with less trading volume, "News" posts often do not exist or the ticker is mistaken for a different topic on Reddit
 * For best results, search for more popular assets, like blue-chip stocks and cryptocurrencies
-![Reddit Stock Research Tool](https://user-images.githubusercontent.com/78511177/179856258-422676f0-2e8f-48a0-85b0-5cf407e2559a.jpeg)
 
-![AAPL](https://user-images.githubusercontent.com/78511177/179856279-578bdfc3-d6db-4e4e-b68c-525655620aef.jpeg)
+<img width="282" alt="Screen Shot 2022-07-19 at 6 11 01 PM" src="https://user-images.githubusercontent.com/78511177/179857217-5ba286cf-59e2-4c0d-b35f-2746a2b53e06.png">
+
+<br>
+
+<img width="250" alt="Screen Shot 2022-07-19 at 6 13 06 PM" src="https://user-images.githubusercontent.com/78511177/179857412-096b6fd2-ce49-4d6d-a284-05a61ca5703d.png">
 
 
 
