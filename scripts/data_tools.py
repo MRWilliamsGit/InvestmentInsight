@@ -33,7 +33,7 @@ def make_cloud_chunks(posts_df):
         #remove links, etc.
         post = re.sub(r'http\S+', '', post)
         post = re.sub("&amp;#x200B;", '', post)
-        gone = '[]//\\()'
+        gone = '[]//$\\()'
         for g in gone:
             post = post.replace(g, '')
         post = post.replace("\n", ' ')
