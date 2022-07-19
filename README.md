@@ -88,11 +88,15 @@ Model Evaluation & Results
 Results Based on Sentiment Analysis:
 
 Suggested Buy Signal
+
+
 <img width="434" alt="Screen Shot 2022-07-19 at 6 14 19 PM" src="https://user-images.githubusercontent.com/78511177/179857576-74286598-141e-42b3-8d66-b09eeb82ded7.png">
 
 <br>
 
 Suggested Sell Signal
+
+
 <img width="432" alt="Screen Shot 2022-07-19 at 6 16 44 PM" src="https://user-images.githubusercontent.com/78511177/179857811-b1fa053f-c93e-4ed6-a252-1ba75c7fe814.png">
 
 
