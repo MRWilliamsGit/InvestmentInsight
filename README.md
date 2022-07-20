@@ -153,5 +153,3 @@ Citation
   journal = {GitHub repository},
   howpublished = {\url{https://github.com/roshan-adusumilli/nlp_10-ks}}
 }
-
-@ Derrick/Maria - format looks to be broken
