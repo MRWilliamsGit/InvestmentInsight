@@ -108,7 +108,8 @@ https://user-images.githubusercontent.com/78511177/180041852-69e2c8a4-5031-49f7-
 
 Summary Generation:
 
-<br>
+
+
 https://user-images.githubusercontent.com/78511177/180041893-c5568833-a517-4893-b632-5d11305b42e0.mp4
 
 
