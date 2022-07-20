@@ -99,13 +99,14 @@ Suggested Sell Signal
 
 <img width="432" alt="Screen Shot 2022-07-19 at 6 16 44 PM" src="https://user-images.githubusercontent.com/78511177/179857811-b1fa053f-c93e-4ed6-a252-1ba75c7fe814.png">
 
+<br>
+Ticker Search Demonstration
 
 
 
+https://user-images.githubusercontent.com/78511177/180038180-ff933cf3-54d2-4e3d-b8c9-eb0d631041f3.mp4
 
 
-
-<br> INSERT .MOV DEMO
 
 
 Future Work
