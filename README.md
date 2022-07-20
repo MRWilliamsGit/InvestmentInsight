@@ -99,12 +99,18 @@ Suggested Sell Signal
 
 <img width="432" alt="Screen Shot 2022-07-19 at 6 16 44 PM" src="https://user-images.githubusercontent.com/78511177/179857811-b1fa053f-c93e-4ed6-a252-1ba75c7fe814.png">
 
+Streamlit Demonstration on Coinbase (Ticker: COIN)
 <br>
 Ticker Search Demonstration
 
+https://user-images.githubusercontent.com/78511177/180041852-69e2c8a4-5031-49f7-97a6-21f5d6bc673e.mp4
+
+<br>
+Generating
+https://user-images.githubusercontent.com/78511177/180041893-c5568833-a517-4893-b632-5d11305b42e0.mp4
 
 
-https://user-images.githubusercontent.com/78511177/180038180-ff933cf3-54d2-4e3d-b8c9-eb0d631041f3.mp4
+
 
 
 
