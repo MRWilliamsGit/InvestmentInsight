@@ -73,9 +73,20 @@ Data Sourcing, Processing, & Modeling
            
            * A count of the frequency of sentiment-carrying words in the Reddit posts for the queried stock                    ticker is conducted and used to make a recommendation on buying, selling, or waiting on the stock. A              graph of sentiment-carrying word frequency is also displayed through the User Interface
 
-Non-DL Discussion
+Adavantages of Deep Learning vs. Non-Deep in Finance
 ---------------
-DA: Filling in
+NLP is better at creating structure out of unstructured data and recognizing finance jargon
+
+NLP enriches decision-making in the following ways:
+
+     1) Automation: Replace manual process or turning unstructured data into a more usabble form i.e. automating             capture of earnings calls
+    
+     2) Data Enrichment: Add context to captured, unstructered data to make it more searchable and actionable i.e.           searching for a particular topic in an earnings call
+     
+     3) Search and Discovery: Create a competitive advantage from a variety of sources
+     
+     (Source: MIT Sloan School of Management)
+
 
 
 Model Evaluation & Results
