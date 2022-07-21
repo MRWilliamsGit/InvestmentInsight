@@ -96,6 +96,21 @@ Model Evaluation & Results
 * For stocks with less trading volume, "News" posts often do not exist or the ticker is mistaken for a different topic on Reddit
 * For best results, search for more popular assets, like blue-chip stocks
 
+Streamlit Demonstration on Coinbase (Ticker: COIN)
+<br>
+<br>
+Ticker Search:
+
+https://user-images.githubusercontent.com/78511177/180041852-69e2c8a4-5031-49f7-97a6-21f5d6bc673e.mp4
+
+Summary Generation:
+
+
+
+https://user-images.githubusercontent.com/78511177/180041893-c5568833-a517-4893-b632-5d11305b42e0.mp4
+
+
+
 Results Based on Sentiment Analysis:
 
 Suggested Buy Signal
@@ -110,18 +125,7 @@ Suggested Sell Signal
 
 <img width="432" alt="Screen Shot 2022-07-19 at 6 16 44 PM" src="https://user-images.githubusercontent.com/78511177/179857811-b1fa053f-c93e-4ed6-a252-1ba75c7fe814.png">
 
-Streamlit Demonstration on Coinbase (Ticker: COIN)
-<br>
-<br>
-Ticker Search:
 
-https://user-images.githubusercontent.com/78511177/180041852-69e2c8a4-5031-49f7-97a6-21f5d6bc673e.mp4
-
-Summary Generation:
-
-
-
-https://user-images.githubusercontent.com/78511177/180041893-c5568833-a517-4893-b632-5d11305b42e0.mp4
 
 
 
