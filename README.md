@@ -79,13 +79,13 @@ NLP is better at creating structure out of unstructured data and recognizing fin
 
 NLP enriches decision-making in the following ways:
 
-     1) Automation: Replace manual process or turning unstructured data into a more usabble form i.e. automating             capture of earnings calls
+   1) Automation: Replace manual process or turning unstructured data into a more usabble form i.e. automating capture of earnings calls
     
-     2) Data Enrichment: Add context to captured, unstructered data to make it more searchable and actionable i.e.           searching for a particular topic in an earnings call
+   2) Data Enrichment: Add context to captured, unstructered data to make it more searchable and actionable i.e.searching for a particular topic in an           earnings call
      
-     3) Search and Discovery: Create a competitive advantage from a variety of sources
+   3) Search and Discovery: Create a competitive advantage from a variety of sources
      
-     (Source: MIT Sloan School of Management)
+      (Source: MIT Sloan School of Management)
 
 
 
