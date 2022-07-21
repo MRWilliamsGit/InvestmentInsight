@@ -73,7 +73,7 @@ Data Sourcing, Processing, & Modeling
            
            * A count of the frequency of sentiment-carrying words in the Reddit posts for the queried stock                    ticker is conducted and used to make a recommendation on buying, selling, or waiting on the stock. A              graph of sentiment-carrying word frequency is also displayed through the User Interface
 
-Adavantages of Deep Learning vs. Non-Deep in Finance
+Adavantages of Deep Learning vs. Non-Deep Learning in Finance
 ---------------
 NLP is better at creating structure out of unstructured data and recognizing finance jargon
 
