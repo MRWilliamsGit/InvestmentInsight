@@ -81,7 +81,7 @@ NLP enriches decision-making in the following ways:
 
    1) Automation: Replace manual process or turning unstructured data into a more usable form i.e. automating capture of earnings calls
     
-   2) Data Enrichment: Add context to captured, unstructered data to make it more searchable and actionable i.e.searching for a particular topic in an           earnings call
+   2) Data Enrichment: Add context to captured, unstructured data to make it more searchable and actionable i.e. searching for a particular topic in a financial filing
      
    3) Search and Discovery: Create a competitive advantage from a variety of sources
      
