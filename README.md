@@ -157,10 +157,10 @@ Additional Resources
 
 Citation
 --------
-[1] R. Adusumilli, [*NLP in the Stock Market*](/https://github.com/roshan-adusumilli/nlp_10-ks)
+[1] R. Adusumilli, [NLP in the Stock Market](/https://github.com/roshan-adusumilli/nlp_10-ks)
 
 ```
-@misc{NLP_on_Financial_Statements,
+@InProceedings{NLP_on_Financial_Statements,
   author    = {Roshan Adusumilli},
   title     = {NLP in the Stock Market},
   year      = {2020},
