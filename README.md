@@ -152,6 +152,8 @@ Conclusion
 
 Additional Resources
 --------------------
+* Financial Sentiment Analysis - Project by Prosus: [here](https://github.com/ProsusAI/finBERT)
+
 * NLP in the Stock Market - Project by Roshan Adusumilli: [here](https://towardsdatascience.com/nlp-in-the-stock-market-8760d062eb92#:~:text=Machine%20learning%20models%20implemented%20in,forms%20to%20forecast%20stock%20movements.)
 
 * Loughran McDonald-SA-2020 Sentiment Word List: [here](https://researchdata.up.ac.za/articles/dataset/Loughran_McDonald-SA-2020_Sentiment_Word_List/14401178)
