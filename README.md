@@ -98,7 +98,7 @@ Model Evaluation & Results
 
 Note: the software platform makes use of the terms, bullish and bearish
 * 🐂 Bullish: Postive sentiment in which investors believe a stock or the broader market will appreciate in value
-* 🐻 Bearish: Negative sentiment in which investors believe a stock or the broader market will depreciate in value
+* 🐻 Bearish: Negative sentiment in which investors believe a stock or the broader market will depreciate in   value
 
 
 Streamlit Demonstration on Coinbase (Ticker: COIN)
