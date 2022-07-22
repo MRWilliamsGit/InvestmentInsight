@@ -95,9 +95,11 @@ Model Evaluation & Results
 * The tool works best for popular stocks on Reddit
 * For stocks with less trading volume, "News" posts often do not exist or the ticker is mistaken for a different topic on Reddit
 * For best results, search for more popular assets, like blue-chip stocks
-* Note: the software platform makes use of the terms bullish and bearish
+
+Note: the software platform makes use of the terms bullish and bearish
 * 🐂 Bullish: Postive sentiment in which investors believe a stock or the broader market will appreciate in value
 * 🐻 Bearish: Negative sentiment in which investors believe a stock or the broader market will depreciate in value
+
 
 Streamlit Demonstration on Coinbase (Ticker: COIN)
 <br>
