@@ -33,7 +33,7 @@ Problem Statement
 
     2) Sentiment analysis will label the news aggregation as positive, negative, or uncertain
 
-    3) Given that non-consensus investing yields superior returns, the platform will generate a buy reommendation when the sentiment is negative, a sell signal when the sentiment is negative, and do nothing when the sentiment is uncertain
+    3) Given that non-consensus investing yields superior returns, the platform will generate a buy recommendation when the sentiment is negative, a sell signal when the sentiment is negative, and do nothing when the sentiment is uncertain
 
 Getting Started
 ---------------
