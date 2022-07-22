@@ -152,6 +152,8 @@ Conclusion
 
 Additional Resources
 --------------------
+* Corresponding Slide Deck: [here](https://prodduke-my.sharepoint.com/:p:/g/personal/da204_duke_edu/Ec1ZDUDSbthGunjGt8mpvN4BtHJSYaoSMXipR13o9brTjA?e=vf53j4)
+
 * Financial Sentiment Analysis - Project by Prosus: [here](https://github.com/ProsusAI/finBERT)
 
 * NLP in the Stock Market - Project by Roshan Adusumilli: [here](https://towardsdatascience.com/nlp-in-the-stock-market-8760d062eb92#:~:text=Machine%20learning%20models%20implemented%20in,forms%20to%20forecast%20stock%20movements.)
