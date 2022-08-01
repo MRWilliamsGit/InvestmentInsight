@@ -34,6 +34,7 @@ def main():
                 gfs = GenFinSummarizer()
                 # Create output to display on UI
                 output = gfs.summarize(text_list, length=400)
+                
             # Display auto summary
             st.header("Summary")
             st.write(output)

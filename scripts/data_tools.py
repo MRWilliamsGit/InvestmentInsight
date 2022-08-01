@@ -11,7 +11,7 @@ def makecloud(posts_df):
     #remove links, etc.
     textblock = re.sub(r'http\S+', '', textblock)
     textblock = re.sub("&amp;#x200B;", '', textblock)
-    gone = '[]()'
+    gone = '[]$\\//()'
     for g in gone:
         textblock = textblock.replace(g, '')
     textblock = textblock.replace("\n", ' ')
