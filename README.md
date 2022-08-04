@@ -36,7 +36,7 @@ grant_type = 'password'
 username = 'abcdef'
 password = 'abcdef'
 ```
-4. Now that you have the crednentials you need, install the dependancies to your local environment.
+4. Now that you have the credentials you need, install dependancies to your local environment.
 ```
 pip install -r requirements.txt
 ```
