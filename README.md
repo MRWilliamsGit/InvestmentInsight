@@ -1,4 +1,4 @@
-# Investment Insight
+# InvestmentInsight
 Individual lay investors often don't have the time or expertise to properly research stock options and make informed buying decisions. They easily fall into the trap of following the general consensus, when the best returns are always obtained through doing the opposite of the crowd.
 
 To speed up the research process and dampen the effect of general sentiment, this project uses Natural Language Processing to summarize Reddit posts and identify sentiments related to specific stock tickers. It then reminds investors to behave opposite  the market, to "buy when others are selling and sell when others are buying."
