@@ -26,7 +26,7 @@ Please enjoy interacting with this tool through its public app:
 https://mrwilliamsgit-socialmedianlp-main-yx3u2h.streamlitapp.com/
 
 ## Local Deployment
-1. First Obtain Reddit API developer access.
+1. First obtain Reddit API developer access.
 2. Clone this repository to your local environment and add an additional folder named '.streamlit' (note the period).
 3. In this folder, add a .toml file named 'secrets.toml' with these necessary details. Note: grant_type will remain the literal word 'password'.
 ```
