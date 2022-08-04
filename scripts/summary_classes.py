@@ -71,7 +71,7 @@ class ExFinSummarizer():
             sentence_reduced = [word.lower() for word in sentence_reduced.split(' ') if word.lower() not in stopwords.words('english')]
             sentences_processed.append(' '.join(word for word in sentence_reduced))
         
-        #vectorize each setence
+        #vectorize each sentence
         feature_vecs = self.vectorizer.fit_transform(sentences)
         feature_vecs = feature_vecs.todense().tolist()
             
