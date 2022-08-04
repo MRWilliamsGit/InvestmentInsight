@@ -17,11 +17,11 @@ Summarization is performed by a pre-trained [DistilBART model](https://huggingfa
 ## Explainability
 A graph of sentiment-carrying word frequency is also displayed through the User Interface, so that investors can note how strong the sentiment is.
 
-Note: the software platform makes use of the terms, bullish and bearish
+Note: this project makes use of the terms "bullish" and "bearish":
 * 🐂 Bullish: Postive sentiment in which investors believe a stock or the broader market will appreciate in value
 * 🐻 Bearish: Negative sentiment in which investors believe a stock or the broader market will depreciate in   value
 
-## Deployment
+## Public Deployment
 Please enjoy interacting with this tool through its public app:
 https://mrwilliamsgit-socialmedianlp-main-yx3u2h.streamlitapp.com/
 
