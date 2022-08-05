@@ -52,7 +52,7 @@ class ExFinSummarizer():
         try:
             nltk.data.find('stopwords')
         except LookupError:
-            nltk_download('stopwords')
+            nltk.download('stopwords')
 
         self.vectorizer = TfidfVectorizer()
         self.sentences=[]
